@@ -7,3 +7,4 @@
 
 Adding another line to see if merge conflict arises!
 
+Adding a new line to cause second merge conflict
