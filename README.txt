@@ -4,4 +4,6 @@
 #Upcoming Features
     Quiz section (news-related quizzes)
     Poll section
-Adding a new line to cause merge conflict
+
+Adding another line to see if merge conflict arises!
+
