@@ -18,3 +18,5 @@ def fetch_python_events():
 
 if __name__ == "__main__":
     fetch_python_events()
+
+print('Another line added')
