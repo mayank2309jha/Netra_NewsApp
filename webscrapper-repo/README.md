@@ -3,4 +3,4 @@ The project is going to perform web scraping from various news websites and then
 
 ## Upcoming Features
 - Quiz section (news-related quizzes)
-- Poll section 
+- Poll section (to resolve bias)
