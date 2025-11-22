@@ -1,13 +1,64 @@
-import React from 'react';
-import {Container,Grid,Box,Card,CardContent,Typography,Divider,Chip,Paper,Button,Stack} from '@mui/material';
-import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import ThumbDownIcon from '@mui/icons-material/ThumbDown';
+import React, { useState } from 'react';
+import {
+  Container,
+  Grid,
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  Divider,
+  Button,
+  Stack,
+  TextField,
+  Avatar,
+} from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
 
 const ArticleContent = () => {
+  const [comments, setComments] = useState([
+    {
+      id: 1,
+      author: 'John Doe',
+      avatar: 'JD',
+      timestamp: '2 hours ago',
+      content: 'This article seems to present facts without much bias. The reporting is straightforward about the incident.',
+    },
+    {
+      id: 2,
+      author: 'Sarah Smith',
+      avatar: 'SS',
+      timestamp: '1 hour ago',
+      content: 'I noticed the headline emphasizes tragedy more than providing factual updates. Could be seen as sensationalism.',
+    },
+    {
+      id: 3,
+      author: 'Mike Johnson',
+      avatar: 'MJ',
+      timestamp: '45 minutes ago',
+      content: 'The coverage seems balanced. Government response is being documented properly without excessive criticism or praise.',
+    },
+  ]);
+
+  const [newComment, setNewComment] = useState('');
+
+  const handleAddComment = () => {
+    if (newComment.trim()) {
+      const comment = {
+        id: comments.length + 1,
+        author: 'You',
+        avatar: 'YO',
+        timestamp: 'just now',
+        content: newComment,
+      };
+      setComments([comment, ...comments]);
+      setNewComment('');
+    }
+  };
+
   return (
     <Container maxWidth="lg" sx={{ py: 4, minHeight: '100vh' }}>
       <Grid container spacing={3}>
-        {/* Main Content Area - Left Side */}
+        {/* Main Content Area */}
         <Grid item xs={12} md={8}>
           <Card elevation={2} sx={{ mb: 4 }}>
             <CardContent sx={{ p: { xs: 2, md: 4 } }}>
@@ -40,11 +91,15 @@ const ArticleContent = () => {
               </Typography>
 
               {/* Featured Image Placeholder */}
-              <Box
-                sx={{width: '100%',height: '300px',backgroundColor: '#e0e0e0',borderRadius: 1,mb: 3,display: 'flex',alignItems: 'center',justifyContent: 'center'}}
-              >
-                <Typography color="textSecondary">Featured Image</Typography>
+              <Box sx={{width: '100%',height: '400px',borderRadius: 1,mb: 3,overflow: 'hidden',backgroundColor: '#e0e0e0',}}>
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAsqchnsjWAto11GIB3Xk9qVap94Nrqe31NUPIGiSemT8toD9wVjjlARdUKnvb68CSMEc&fopt=w560-h336-rw-dcCVKGKDFkc4kC" alt="Featured article image"
+                    style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}/>
               </Box>
+
 
               <Divider sx={{ mb: 3 }} />
 
@@ -70,207 +125,119 @@ const ArticleContent = () => {
               </Button>
             </CardContent>
           </Card>
-        </Grid>
 
-        {/* Voting Panel - Right Side */}
-        <Grid item xs={12} md={4}>
-          {/* Voting Card */}
-          <Card elevation={2} sx={{ position: 'sticky', top: 20, mb: 3 }}>
-            <CardContent sx={{ p: 3 }}>
-              <Typography variant="h6"sx={{fontWeight: 700,mb: 3,textAlign: 'center',color: '#1976d2',}}
-              >
-                Is This Article Biased?
+          {/* Discussion Section */}
+          <Card elevation={2}>
+            <CardContent sx={{ p: { xs: 2, md: 4 } }}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 3 }}>
+                Discussion ({comments.length})
               </Typography>
-
-              <Stack spacing={2} sx={{ mb: 3 }}>
-                {/* Biased Button */}
-                <Button variant="outlined" color="error" fullWidth size="large" startIcon={<ThumbDownIcon />}sx={{py: 1.5,fontSize: '0.95rem',fontWeight: 600,}}
-                >
-                  Yes, It's Biased
-                </Button>
-
-                {/* Not Biased Button */}
-                <Button variant="outlined" color="success" fullWidth size="large" startIcon={<ThumbUpIcon />} sx={{ py: 1.5, fontSize: '0.95rem',fontWeight: 600,}}
-                >
-                  No, It's Not Biased
-                </Button>
-              </Stack>
 
               <Divider sx={{ mb: 3 }} />
 
-              {/* Voting Statistics */}
-              <Typography
-                variant="subtitle2"
-                sx={{
-                  fontWeight: 700,
-                  mb: 2,
-                  textAlign: 'center',
-                  color: '#666',
-                  textTransform: 'uppercase',
-                  fontSize: '0.75rem',
-                  letterSpacing: '0.5px',
-                }}
-              >
-                Community Verdict (1,245 votes)
-              </Typography>
-
-              {/* Biased Progress */}
-              <Box sx={{ mb: 2.5 }}>
-                <Box
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    mb: 1,
-                  }}
-                >
-                  <Typography variant="caption" sx={{ fontWeight: 600 }}>
-                    Biased
-                  </Typography>
-                  <Typography variant="caption" sx={{ fontWeight: 600 }}>
-                    765 (61%)
-                  </Typography>
-                </Box>
-                <Box
-                  sx={{
-                    height: 8,
-                    backgroundColor: '#e0e0e0',
-                    borderRadius: 4,
-                    overflow: 'hidden',
-                  }}
-                >
-                  <Box
+              {/* Comment Input */}
+              <Box sx={{ mb: 4 }}>
+                <Typography variant="subtitle2" sx={{ fontWeight: 600, mb: 2 }}>
+                  Share your thoughts
+                </Typography>
+                <Stack spacing={2}>
+                  <TextField
+                    fullWidth
+                    multiline
+                    rows={3}
+                    placeholder="What's your take on this article's bias?"
+                    value={newComment}
+                    onChange={(e) => setNewComment(e.target.value)}
+                    variant="outlined"
                     sx={{
-                      height: '100%',
-                      width: '61%',
-                      backgroundColor: '#d32f2f',
+                      '& .MuiOutlinedInput-root': {
+                        backgroundColor: '#f9f9f9',
+                      },
                     }}
                   />
-                </Box>
+                  <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      endIcon={<SendIcon />}
+                      onClick={handleAddComment}
+                      disabled={!newComment.trim()}
+                    >
+                      Post Comment
+                    </Button>
+                  </Box>
+                </Stack>
               </Box>
 
-              {/* Not Biased Progress */}
-              <Box>
-                <Box
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    mb: 1,
-                  }}
-                >
-                  <Typography variant="caption" sx={{ fontWeight: 600 }}>
-                    Not Biased
-                  </Typography>
-                  <Typography variant="caption" sx={{ fontWeight: 600 }}>
-                    480 (39%)
+              <Divider sx={{ mb: 3 }} />
+
+              {/* Comments Thread */}
+              <Stack spacing={3}>
+                {comments.map((comment) => (
+                  <Box key={comment.id}>
+                    <Stack direction="row" spacing={2}>
+                      <Avatar
+                        sx={{
+                          width: 40,
+                          height: 40,
+                          backgroundColor: '#1976d2',
+                          fontSize: '0.875rem',
+                          fontWeight: 600,
+                        }}
+                      >
+                        {comment.avatar}
+                      </Avatar>
+                      <Box sx={{ flex: 1 }}>
+                        <Stack direction="row" spacing={1} sx={{ alignItems: 'center', mb: 0.5 }}>
+                          <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
+                            {comment.author}
+                          </Typography>
+                          <Typography variant="caption" color="textSecondary">
+                            {comment.timestamp}
+                          </Typography>
+                        </Stack>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            color: '#333',
+                            lineHeight: 1.6,
+                            backgroundColor: '#f5f5f5',
+                            p: 1.5,
+                            borderRadius: 1,
+                          }}
+                        >
+                          {comment.content}
+                        </Typography>
+                      </Box>
+                    </Stack>
+                    <Divider sx={{ mt: 2 }} />
+                  </Box>
+                ))}
+              </Stack>
+
+              {comments.length === 0 && (
+                <Box sx={{ textAlign: 'center', py: 4 }}>
+                  <Typography variant="body2" color="textSecondary">
+                    No comments yet. Be the first to share your thoughts!
                   </Typography>
                 </Box>
-                <Box
-                  sx={{
-                    height: 8,
-                    backgroundColor: '#e0e0e0',
-                    borderRadius: 4,
-                    overflow: 'hidden',
-                  }}
-                >
-                  <Box
-                    sx={{
-                      height: '100%',
-                      width: '39%',
-                      backgroundColor: '#388e3c',
-                    }}
-                  />
-                </Box>
-              </Box>
+              )}
             </CardContent>
           </Card>
+        </Grid>
 
-          {/* Article Metadata */}
-          <Paper sx={{ p: 3, backgroundColor: '#f5f5f5' }}>
-            <Typography
-              variant="h6"
-              sx={{ mb: 2, fontWeight: 700 }}
-            >
-              Article Info
-            </Typography>
-
-            <Stack spacing={2}>
-              <Box>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    color: '#999',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    fontSize: '0.7rem',
-                    letterSpacing: '0.5px',
-                  }}
-                >
-                  Source
-                </Typography>
-                <Typography variant="body2" sx={{ mt: 0.5 }}>
-                  Hindustan Times
-                </Typography>
-              </Box>
-
-              <Box>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    color: '#999',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    fontSize: '0.7rem',
-                    letterSpacing: '0.5px',
-                  }}
-                >
-                  Published
-                </Typography>
-                <Typography variant="body2" sx={{ mt: 0.5 }}>
-                  24-10-2025
-                </Typography>
-              </Box>
-
-              <Box>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    color: '#999',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    fontSize: '0.7rem',
-                    letterSpacing: '0.5px',
-                  }}
-                >
-                  Author
-                </Typography>
-                <Typography variant="body2" sx={{ mt: 0.5 }}>
-                  Unknown Author
-                </Typography>
-              </Box>
-
-              <Box>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    color: '#999',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    fontSize: '0.7rem',
-                    letterSpacing: '0.5px',
-                  }}
-                >
-                  Community Verdict
-                </Typography>
-                <Chip
-                  label="61% Found Biased"
-                  color="error"
-                  variant="outlined"
-                  size="small"
-                  sx={{ mt: 1 }}
-                />
-              </Box>
-            </Stack>
-          </Paper>
+        {/* Sidebar - Empty for now, can be used for related articles or sidebar widgets */}
+        <Grid item xs={12} md={4}>
+          <Card elevation={2}>
+            <CardContent sx={{ p: 3 }}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
+                Related Articles
+              </Typography>
+              <Typography variant="body2" color="textSecondary">
+                Coming soon...
+              </Typography>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
     </Container>

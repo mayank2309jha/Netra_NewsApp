@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import {AppBar,Toolbar,Typography,Box,Button,IconButton,Drawer,List,ListItem,ListItemText} from '@mui/material';
+import {AppBar,Toolbar,Typography,Box,Button,IconButton,Drawer,List,ListItem,ListItemText, MenuItem,Menu,Divider} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -15,41 +15,41 @@ const Navbar = () => {
         {label: 'Business', path: '/business'},
         {label: 'Science', path: '/science'},
         {label: 'Technology', path: '/technology'},
-        {label: 'Entertainment', path: '/entertainment'}
+        {label: 'Entertainment', path: '/entertainment'},
+        {label: 'See Stats', path: '/see-stats'}
     ];
-React.useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 960) {
-        setMobileMenuOpen(false);
-      }
-    };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-}, []);
+    React.useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth > 960) {
+            setMobileMenuOpen(false);
+          }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return(
         <>
             <AppBar position="static" sx={{backgroundColor: '#ffffff',color: '#000000',boxShadow:'0 2px 4px rgba(0,0,0,0.1)'}}>
                 <Toolbar sx={{justifyContent:'space-between',px:{xs: 2, md: 4}}}>
-                    {/*Logo */}
-                    <Typography variant="h6" sx={{fontWeight:'bold',color:'#080808ff',textDecoration:'none'}}>
-                        NETRA
-                    </Typography>
 
                     {/*Desktop Navigation */}
                     <Box sx={{display:{xs: 'none', md:'flex'},gap: 2,justifyContent:'center',flex:1}}>
                         {navItems.map((item)=>(
-                            <Button key={item.path} sx={{color:'#333333',textTransform:'none',fontSize:'0.95rem',fontWeight: 500, '&:hover':{backgroundColor: 'rgba(25,118,210,0.08'},}}>
+                            <Button key={item.path} sx={{color:'#333333',textTransform:'none',fontSize:'0.95rem',fontWeight: 500, '&:hover':{backgroundColor: 'rgba(25,118,210,0.08)'},}}>
                                 {item.label}
                             </Button>
                         ))}
                     </Box>
 
-                        {/*Mobile Menu Button */}
+                    {/*Mobile Menu Button */}
+                    <Box sx={{display:'flex',alignItems:'center',gap:1}}>
                         <IconButton sx={{display:{xs:'block',md:'none'}}} onClick={()=>setMobileMenuOpen(true)}>
                             <MenuIcon/>
                         </IconButton>
+                    </Box>
                 </Toolbar>
             </AppBar>
 
