@@ -11,7 +11,7 @@ const Navbar = () => {
         {label: 'India', path: '/india'},
         {label: 'World', path: '/world'},
         {label: 'Local', path: '/local'},
-        {label: 'Sports',path: '/local'},
+        {label: 'Sports',path: '/sports'},
         {label: 'Business', path: '/business'},
         {label: 'Science', path: '/science'},
         {label: 'Technology', path: '/technology'},

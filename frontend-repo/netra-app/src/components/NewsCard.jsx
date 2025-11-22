@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Card,
   CardMedia,
@@ -8,10 +9,11 @@ import {
   Box,
   Avatar,
   Chip,
-  Grid,
+  Button,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
@@ -101,6 +103,33 @@ const PublishDate = styled(Box)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const CardActionsStyled = styled(CardActions)(({ theme }) => ({
+  padding: theme.spacing(2),
+  paddingTop: theme.spacing(1),
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  gap: theme.spacing(1),
+}));
+
+const ReadMoreButton = styled(Button)(({ theme }) => ({
+  textTransform: 'none',
+  fontWeight: 600,
+  fontSize: '0.9rem',
+  padding: theme.spacing(0.75, 1.5),
+  backgroundColor: theme.palette.primary.main,
+  color: '#ffffff',
+  borderRadius: theme.spacing(0.5),
+  transition: 'all 0.2s ease',
+  '&:hover': {
+    backgroundColor: theme.palette.primary.dark,
+    transform: 'translateX(2px)',
+  },
+  display: 'flex',
+  alignItems: 'center',
+  gap: theme.spacing(0.5),
+}));
+
 const NewsCard = ({ 
   headline, 
   image, 
@@ -109,8 +138,12 @@ const NewsCard = ({
   sourceLogo, 
   publishDate, 
   category,
-  onClick 
+  id,  // ← ADD: Article ID
+  onClick,
+  onReadMore 
 }) => {
+  const navigate = useNavigate();  // ← ADD: Initialize navigation
+
   const getCategoryColor = (cat) => {
     const colors = {
       India: '#ff5722',
@@ -142,12 +175,24 @@ const NewsCard = ({
   };
 
   const getSourceInitials = (name) => {
+    if (!name) return '?';
     return name
       .split(' ')
       .map((word) => word[0])
       .join('')
       .toUpperCase()
       .slice(0, 2);
+  };
+
+  // ← UPDATED: Handle Read More with navigation
+  const handleReadMore = (e) => {
+    e.stopPropagation();
+    
+    // Navigate to article detail page with ID
+    navigate(`/article/${id}`);
+    
+    // Also call parent callback if provided (optional)
+    onReadMore?.();
   };
 
   return (
@@ -206,6 +251,18 @@ const NewsCard = ({
           )}
         </Box>
       </CardContentStyled>
+
+      {/* Card Actions - Read More Button */}
+      <CardActionsStyled>
+        <Box sx={{ flex: 1 }} />
+        <ReadMoreButton
+          variant="contained"
+          endIcon={<ArrowForwardIcon sx={{ fontSize: '1rem' }} />}
+          onClick={handleReadMore}
+        >
+          Read More
+        </ReadMoreButton>
+      </CardActionsStyled>
     </StyledCard>
   );
 };
