@@ -1,0 +1,982 @@
+[
+  {
+    "primary_article": {
+      "headline": "More - A Christmas answer? Harvard scientist says 3I/ATLAS may reveal its true nature by December",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMi8AFBVV95cUxONW94cjI0cHhUWkVkUDN2MEVnTW5YUlVoZERSM3dYV2ZDMjFlX0RaMndhTl9SVWxQWGNnOUcxN05zLS1Da1YtVHZ6R3pWRXA3SkIzMnY0TkJwNVBZalhpRkpwcmQ5aHRDUmNoc1NnVXlZRldtZjBWRjhiQzA1WUNiSFRNRUJySG14d2lUUHBMWmFLZGpWbU9Tc3dvYXpUMHdPdjNEbmhRaXhRelZKMVE1WVVLSS0yeVdDRnAwR2hiRmFkWkZrVFVqU0wyUlc4b3F0SjFFZGtmS2FZMWNsYnRIV09qeXFkRFpLS28weFlzNl_SAfYBQVVfeXFMUGNqMENMLWN1MkpMbkJuQk9IOFQ4b0xnQ2F0VXBadWMtQm5vemlPOW9ITWNnSXF5TFhOOFVHZDRfU3NmOGkxb1BFXzZZZGdhY2RSbE1aRy1ka1RIZzVUUWpfMnlWbFhyMlVOZWhna2dEdFJuekp4V0MzS0lpUWVPSTlXelp5SV9pZUViVC1TUTRweHhmVjhkaDJiQXdRVkRwSUlPM3lmaWhjSUxQUjhWalFpWWRNbzA2aW1KTXBGUTNpYXl1ZEdSaFR4aG9Tc0duRE5DUzRKU0lmeTFPSS1mbktSaUNLVDl0SGFPaGRqeFBMZmhIUC1n?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNTZjWE5xWlZCa01sRnVhRm96VFJDZkF4ampCU2dLTWdiWkVJS1lsQW8=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Times of India",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Erin Morton",
+        "author": "By Erin Morton",
+        "article_link": "https://news.google.com./read/CBMiowFBVV95cUxPWXcyQTBIbkcxaER5UkhBTU94MmZyQmtLTU83UWtWNVFLcGFkb0Z3Q3A0TE5DWk1EWTRZdHdpbHBjckh0bGJDcVlHRXIxejhTd0pvbG8ydnladUN3UldwbGFHNk45QkV4b2pDQTJlTDdfRHNTTFlYMzNhaWF4VkJaS1JqeFBMX3pqM2djRi1EczltS3JyejMzV2RZSzFfWHRfVkJn?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://science.nasa.gov&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NASA Science (.gov)",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Avi Loeb",
+        "author": "By Avi Loeb",
+        "article_link": "https://news.google.com./read/CBMigwFBVV95cUxORzg3a3lHOHQ0ZWFjYU0xVEdZdnFNdGdLcVJEQThHNFRmUVM1NzNxX1k1R1VBbmNpbGRkSWFPVjNjYXBSU25jdGpWWTBUYVZLZ1dOZzV3am50Y3FzTjJvMV9yVmZLd1gyUmk2SW1IWnhNTGxuUEJKb0ZFdWNETmZ3MWEwbw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://avi-loeb.medium.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Avi Loeb – Medium",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Ben Turner",
+        "author": "By Ben Turner",
+        "article_link": "https://news.google.com./read/CBMi7AFBVV95cUxOTlUxUmNSak95clUtd1NCaVpYRGRBVGFLM3kzdjNMLUdLWGdpY1ZBLXcyMVpHbUpiU2E3d3lRNUo5dHJwZy0yVmlmRk13ZXBXT0wyV1EzVktyOXlJVFBJdkNGbTZCUE9HbzJHRU91bGV3UUtsaVZ2N0ZwejIxTkxEeFBqY0g0aGJqUC16azM0el8tUERWYlpib2tGVjItOWtwWXRnZi1LbVIyQmFGTzFTajZEZzFGZ0lQWEstUEtOVXhaWEFFQkNyNjhIVW4zOFhrbXRQcUVkMzBwNVRvSEt0cnpxblRrNVhKTEt6OA?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.livescience.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Live Science",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Sentinel-6B launched to extend record of sea-level rise",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMiygFBVV95cUxPQ0QzSmJGWFNuNWVkQ1d6WGhhMWJHd25CNndfa3lqN3VGQVN2b0ZLQlZLWDZCbEtELXJ3a0ZmWWZ6SWlqQV9TLVVneVJ3N1hqMmE0QUtZb0pZcEZTUEJocFpDNzQ1MkF5TUpJOUtsQnh6ZTJPbVhrZ1B3a3kzcUtkWWhJVlZ3M1dhd3BPZFdiRW05WEFpbi1JWGFGRkk4YlRyel9LT2toMHc2aUdoS1dSMmVPRl90czZVYXFWaHQ3QV83ekFGb3RSZURn?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNHlUM2RQVERGMVV5MVllREZNVFJDaUF4amVCU2dLTWdZZHNvU091UVE=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.esa.int&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "European Space Agency",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiekFVX3lxTE1zZml2cFBQQVM3eUFaTDEydUxDN21zNWFRQnI4aXpXMEhPZWsxQ0F2YThKT0F3ZFVXanA4a0FZVzZNTGNCV01ZTzZKOUJ0Q3pRU21QSkFucGlqUXEwdWUzSzBpXzAzOU9NRG4wOXg5ZzViWWtsMFdhcG9B?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.eumetsat.int&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "EUMETSAT",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiogFBVV95cUxQd1NEcjh6R0JtMkFFWW02X1ZwTDRyRzQzQmYyazl0bVJROFN4Mi01ZVp5aUR5Y3dPdkxFbnhpRS1vSjRWZU42YUVtMThHaFNtWV9DOGRMWGRJYmh5bUVnLXNxckNDU2FxZDZMdW9lZDFTU2RvZXY4WWRMcm9oQ0VCRHZ5TE91Y2hDbkp3cXBCQjZZNEV4TEJzem9lbm5uSEdyY3c?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nasa.gov&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NASA (.gov)",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiqgFBVV95cUxPSF9TX0I5VlhsdW40cERLbUR6RFdQVlRFSVRUcDYyenJKejBLT3BGbXFFbGJFT2RVb2pVNFB2eEJ2QzRkdDBDRTBqNFJVRmIzcVVzdDRhVk5wc1U5TzM0U1Q2WjZJengxSXYxTUlGck9qQjhlXzhqM3JQVjI4Q1BBbE1pb05DWDFKcVh2SnhIdGpWNjRWV0F0aTlLVjNQdWRMV2xlUW84bEpxQQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://smestreet.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "SMEStreet",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - NASA launches daring mission to rescue falling space telescope",
+      "author": "By Tatyana Kudrenok",
+      "article_link": "https://news.google.com./read/CBMinAFBVV95cUxOZkE4blIxMk1iZkRQaWJPcjB1Vk5rVWszak1wOWJMcHBSRmFtbi1tcWRwbU81X0ZNbHVzcVZyN01KcHNVYzl3R0RCdWxJMHBXYUxCMlVWN0owZTJZZDJvS0MwaG04UVlfNzJhUURXVWY0a2hWT2xJV1M0ZDZfUWo0YkZWSUF3SVZQcTlaVzJuZzV3RVhiQlBncEFJTkXSAZwBQVVfeXFMTnN0bGNDakVrWkFsV0YwOGZXZXlZbkZhZXVfSDRJWUFxQ3BOUGcwQVNsY0xTeDRPclpjSjFvaHB1RllyTklqeUs3TVIxaTBLamxyN0Y3bE9HR3VXcjk3YzVRZ3NmZEdkMXlDNUxHdmJMaTRwTHlWWWUtOGhlN3VVYmIwSVhmT1FoaERVVHkwTGxjWTdTYmpmRXMzZHRC?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNVNRMjFYV2xObFEwbENhbFV4VFJDMkF4aTlCU2dLTWdZbFZJcU1MUVU=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://qazinform.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Qazinform",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMi2gFBVV95cUxQS09TRFg3VTl3dEtuOFg0anhUQ0R1dUl5QS1MTWJxVVVpTE00VUotaF8zMUtBM2lFN3pwYzVtWXdfbGhheWJhQWItc0Z0Ykc3RWdmekhwSzB6RVJlMko2QTNSUmVuMmlTLTdHVEg1cDVIZFdxMVIyUGdDbHg1VElGUGMta0F5SHVmb0dpbjNqelZBUkpxX1pTRDJzc19NTDhLRWNnVldWSW14UkpKb3V4Y0NGYVN0MnQ1cnBxRnJJakJGTlpsVXhTdFpKVWdwbmFEUkVzMVk4MlREQQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://indianexpress.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "The Indian Express",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Jon Martindale",
+        "author": "By Jon Martindale",
+        "article_link": "https://news.google.com./read/CBMirAFBVV95cUxPZHdIcURLSFhUSkpwVWxjOHFydGpiV0NTWVJBVmcxQzY0MmN2VHpYYUx3UThiN3lPeHpGU2RHbG9IaTVGME5XSTNKeHItSXkwb0lGNV9yUFZoTTF2SlB6eXNIeHVLQVdHbGJhOWpjUUZmWnJES3UzdFpPQ1VvclpGMGIwWjk0aWRZaHZERlN2b3RlVWpoVmp0LVUxMTNKN0NWbEhWRHJCUzVYb2w3?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.extremetech.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "extremetech.com",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Jeff Foust",
+        "author": "By Jeff Foust",
+        "article_link": "https://news.google.com./read/CBMihgFBVV95cUxOUHljWmZTZVFNZlQwSGRaM1RNWTBIRUtDUFAzbk10cmdtc0s0dkxCdF9DN1h2NDlQbXVPUUpLMWo1VEJVWlM1SlRfUElBMk9vUDJ0TzdTYnNubk5zMjR0dmdNaFloLW5aS1BmeExNcEwxNzM3QnA5eWhSMU9PSnRuTkxWSlF1Zw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://spacenews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "SpaceNews",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Scientists deliberately triggering earthquake in Swiss Alps",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMidkFVX3lxTFBjeGtRX2J5SnZ2QnlyQk9pY25zNm1pV2MwSTV6SHNoNVlqSGROYkFJWU9MUzRHSWFPcDM3VG9uY3Racnd0NHVNQ1JWZV8tY1VhdEZicVNrMTU5SlVyQnRrb3E1NFVMSXNCZ3U5Yy10cXNRRTg4QXfSAXZBVV95cUxQY3hrUV9ieUp2dkJ5ckJPaWNuczZtaVdjMEk1ekhzaDVZakhkTmJBSVlPTFM0R0lhT3AzN1RvbmN0WnJ3dDR1TUNSVmVfLWNVYXRGYnFTazE1OUpVckJ0a29xNTRVTElzQmd1OWMtdHFzUUU4OEF3?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNW9jM0F0TkUwNFIxOUdla3RqVFJDUkF4ajhCU2dLTWdhQnhZQUJ6Z0U=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://voice.lapaas.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Lapaas Voice",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Mudit Dube",
+        "author": "By Mudit Dube",
+        "article_link": "https://news.google.com./read/CBMirwFBVV95cUxQdk4ybGxKRkxSSGRVUGgxcUd2ODJRVUl1dVpScjU3dUY0d2JneGdqTXBUZ0FZOU4wSFg1dU95dEFXaTUtR0pySkpvejlKT0ZsYXItUTEza2pTeEFYR1dvUnBGOHduY2lILVRNek1rUTNxSklaVmpJMjgxYzltYkFibE9taUVNV19NLVI2dnNjNnVsZXNBR1BfSWt3bmNYd1dqaVlGVDB6SzZxR21xR1VB?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.newsbytesapp.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NewsBytes",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Sofia Babu Chacko",
+        "author": "By Sofia Babu Chacko",
+        "article_link": "https://news.google.com./read/CBMihgJBVV95cUxPcGxwZTVaU2FaUFJ2cFJ4N09TcGNjbzRuaUhodFpiU3pxdGZYWS1kY1pHRm56dVFZMEVUZTFGUUVpekFWUU04RkhZdGJlV2lmRm1XSmNERkNYbFN2NGdCN2c4YW5KZFBTcU03LXRQWlRJUXIwVWxlYllDWjNETnRaeEJEV3g4bWdpaFVCd0lxNEV0NUtQT3UyUzE1dDhEY0lpTnZMV0gwQ0VWVEJtWV9sZ001SnNmUy04SjdRS0ZjdDlZV0lCTWJOZjAtbnEwbjhiUVR0TS1UNlVYRXdMRG1WdjFzVVBQQTlidUtMLVR3dUdWdGk3anNzTTdKU0xhOS04ZTE1UjF30gGLAkFVX3lxTE9JV2ZGUlhBVDYxRHNRVDV3WHR3dWVPSTlCNGIxRnhJb2h0STdMLWtrVm1uTE80aVhLZ28tWEYxSTZ2T0hZc3NlODAxU2Q4TGE1UkxDRURJOUhQR0k3a3N0WjdNR1Ryb3h6N3NlVm4wX25KSEFNX3BuMHJPZjhRUTVlVUNLRnpROVI4blVZaVhnYTdIWUZIWmY1TlRjTGJYYjlHcGM5LTl4WXJ4dTlXZVRJU0RIN01vNlNVWVlDWU5mMnFOYjBIX1BKc3A2YXNUZUNpa0toVjVSODVXMDBTWER0QnpxR0hXUlRjZ2tzSGlZd0hpdVU3bzJXZXJDNUFpUEtnWklpamVBd3NlTQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.newsx.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NewsX",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Anamica Singh",
+        "author": "By Anamica Singh",
+        "article_link": "https://news.google.com./read/CBMi0AFBVV95cUxPcGpYT1NsSmZ1SVZHdDE1UmZmejJfS2ZOYXlsdEFzdGU0Q0J4d213ajM0bmpvalhNaE9rcWNUaWlzTXd2TS1iYmh6alBqSnRycUpnMEUwRHRGZHp5SDh4dV9sNnRoTlN4cHBzbVJTTEh4VmFhSjZsVFd2c1phdjBEUFhIQlg3VmtmSzRQby1OWEZFcWVha2lhMldOSE9BYzlSYkFWTTRvM29qMDdXZE1BRDhOQTFSbGdQRW1QMWtyS0hqYlZudHZsSWViMGEzcjlN0gHWAUFVX3lxTE00OUJ4d242Q0JpZ1RSdzNGaFQyVlo5b3FoRWdzaUdjQ3JwYmpJdFZBS0tiamc2TF8zNVpTRTlUTU1xaWtuOFdEQlFKSDQxaFdwS0xDUnQtQkMydXNwRjcwNTBsYU43QlBkbHZCcmdlTk1ONElzd204VGF4WFAyV3V0STd4N3ZIazRuQnV3TFMybTQ3cEtTVWRjVXFqaVZyeW1rVC1sWkRFeW5wd3M5cXFYcTh0Z01oUklDcWJ4QW94RENzSjU2dzdDZU1oYTJvdXlxaW5ER2c?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wionews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "WION",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - World's first kiss was between THIS species, evolved 20 million years ago; scientists reveal emotions behind kissing",
+      "author": "By Vaishali Shastri",
+      "article_link": "https://news.google.com./read/CBMi8gFBVV95cUxQWFBqMVVqeEF5RkJYZldidGpJWEw4UlNzREotN3hNVG9CQWtfLXhwcUFXOVBpeXlDRFdXbmtpMWtCOUE3RTJCUURGTHVfUUNmUmowM0dpczY1NUVSeFppbzVSTnJiOTAweGxLVEtrazNIeGdCQnN3WTdDYTFabXNJUWdRT1Q3dEVjUHQ5dHYwVnBfWG14Y2RJb3gyX05PM0VKS3FQem5GOXNvU1gxM0ZCdC1iVFFlRElTcjVvV2xiS00wcDZpdmdnNnhubm5IeDR0WnRNaDZDLUJnNnhoMnZSaHJOYXI4enVmbXNpMnhxa3V3UdIB9wFBVV95cUxNT1BOeUV2QjRURlNNNjExSnBTQllrVUhWeEVTNFZOYzM5ODRsMUk4NHpSbzBBU3J6bjNuWS1xRFhJT3FIWnFQVHJHMW83b0xOZVM2WWlLdkRUTzFIXzAzUXM4bWlNRF9hWW8ycjV1TXV0ajFPOUNxLTl2aGo1NEhkWFRHV0lQTVRRNnlTdGRzOTc0MENkemJXV3RFeEljQUV4bGhFZnFiV0N0T0hCX3VNeGpreFVjSmJmbFNzYUtGNS1wZ1BTYTdFcWw5cmJ2R09nQVJxMjhleGpvTUtfU3NJWE4wb2VFTEhpVGRxLU9TUmxDUms4WUFv?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNXdSVTVMTVZZdE9UVk9VbFZmVFJEZ0F4aUFCU2dLTWdhaEpJeXNtUWc=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.dnaindia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "DNA India",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMivAFBVV95cUxOSkdzTC1ONVhoLVo4SkVhSTB0TmpyM2x1ak5PZVlBeFEwWElYSnpGN3gxX2hCX1FGUFVUT05QU0RTWjZfbE90bVlqLXlIUFBZS1REQ1dFOEVGeUh5bEFsa291NlFfLXhKRlFwOUE2Z2xSc0Fnd1pIb01yR3RsNHJvcjJLaTU2by1SX2htaEI0dU5nS0h2YmQxWXBIMEt3THV2RzlabGE0cTQ4YldTTWZyV2dLaThPRTZtVjktR9IBwgFBVV95cUxPTmIwemlYR0lhT0pta294T3k4RlJBSjVCeHVlLTl6Y0FTZS04VXNmNjFSNXBwZVFCN2hKWVhNdmF4RmpyaW1QX0RxalduZnU2c1V6ZG13MWdVT3VKRlZJNF9STlNLdHVyMHpsSnY0blR5V3l0eUhGcUE3czRsTWxBOTZ2d1kyWU1PV1UwUjh0VXNUOGVwM2h1ZFpod3RSaUxlZWtkd2tRcHl4cnNkZW12OUt1b040TjAwMEJDT2FNRFphUQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.telegraphindia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Telegraph India",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Chethan Kumar",
+        "author": "By Chethan Kumar",
+        "article_link": "https://news.google.com./read/CBMiuAFBVV95cUxOVVZTVTRBQXdwczBESjRTMWRROTdJRmxTczJyRHl1OG43RGJvNFlsTi1JTkxWbVNQWG5XRng4OGlCcUxuWTFzUG9JenZZejhsTjNveTFHTHU4M1YwREVPX0xUdU9tLTdYY0R1bnhPZjEwM3RxU00xbGZCUlFINldPdnJtRXRTblFEVm1OTVczUWFMVllSU1daMXU0cWFUUXM3Y1FaWjhTTE9pa2NBVWdBNG4tajJwTFh4?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Times of India",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Victoria Gill",
+        "author": "By Victoria Gill",
+        "article_link": "https://news.google.com./read/CBMiWkFVX3lxTE9uaG1sRGJIQTRWZVZnTTUyMVliWWZLQkVWT3NzQVN0emdQUHdoU3BadGVfc2pqeDNmbkZ3aWhJMFJRc2NUUlJYdWl0WmhkQlN1LXFONlRTWHBTdw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "BBC",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - New Research Suggest Earth and Theia were Neighbors Before They Collided",
+      "author": "By Matthew Williams",
+      "article_link": "https://news.google.com./read/CBMisAFBVV95cUxNekp6a0tNWnNSd010bUNfMTdPU1JtbEhYMGRuVHZ2d01zRmVZQ3R3ck1zaGtQc2xvVFhpeVV3bURjQkhnMXNUd0NVeTVmT3doTjh4bWtfZDV2d3BuSW5FNHpZSktXcnpGWG9wbXV4TTF2QWU2TkZ5QmJwRFFUaHMtS3FobkFYN2hTN2pidEV6OWVWZ3VTMFlnU0lqWDRXTjdQQlk4MUVEUk03TmYtaUpuVA?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNTNOa3hKT1ZndFYyTXRSVWRKVFJEZ0F4aUFCU2dLTWdhQlpJWkV1Z1E=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.universetoday.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Universe Today",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Radifah Kabir",
+        "author": "By Radifah Kabir",
+        "article_link": "https://news.google.com./read/CBMi_wFBVV95cUxQTlVZZnp4SFdZbzZIZ0ZNZDZ4YnFPZmgzcklTblVXVFppT2ZQWGZLVWVYWkhEeE5maFlNZXBKSlczRUNKS1UzbGlTcjNsdV9JWGdBNGlJM3VtXzZEcWRUd3Bqc21VMm1OdUZ3WTd4TlNGT1I2cUJZaU96V2Z3UXFCdGF2Q2hlNUdtRmtWTTZZcDJ0bWFvOHYwYUZTSlByVGJzTjBmVFNqOXpTOWlfLThWVWpDdkVqbkhidEo1S1djQmFabE81OGpFUFBZZ0VmUWxoZ3hrRUxGNzZnM0k3SDNuOHJfZ0ZUNTNxWnpwX2oxTjFQTnRwOFhzVjNVQ2djeDQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.indiatoday.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "India Today",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiZ0FVX3lxTE5uNV9fb2tTQWE5dWozZThDX2FhaFZ1OHVGZnhwclh1RFE4TDM5dDc5YmZTZTExeVpUbHJqZzBTcFRUV1pnNEZkejZUSENrNjVtdE12Nl9tX3d3Z3FtMUhzNjBhOFF0cG8?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://phys.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Phys.org",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Sheetal Kumari",
+        "author": "By Sheetal Kumari",
+        "article_link": "https://news.google.com./read/CBMi4AFBVV95cUxPOVNjUG9RN1lqZDM1dlp2dEVLdlp4bGxnWWZLV3J3UmZPbmhCM3RjaDkwaFEzWUxrZnBWekdEWnFPQVVYNUJEejdtLWN6eWZSSUhROERBWWVBQmpMUUdQNkVRQXNmOTFkS2MteWFJR3U3ekRGRlgxVklnV2loZXBoU2hEN3RJQmVYRTJUdTc5QmdLVTkxWkRKSmVYMzI1OTlELUZTbldudDJhT2V5Y1ZGcTBIOGNsOU0weTA1T2JQelZQd2M3SU1va1pVZWJTTFhKR3hDZWNHWjBMb0pQa1k0UdIB5gFBVV95cUxNbmF1b1dFZG9KX1otUWRDcUl4LWFtS2Z5VEVlYm1PTF9wMmVwaHF6SERHVHFkdE5JSHRid09DVENEZFA0MlU0dHMwZF9pS1ExYmM2emtud1VWQU56Q3U4bzU0S2dGRzVmTUtzMnJaMm1SZTE2dmdNQ1lxdm9ScnZkOHNRenBzMUhHZUFiZHU4OGNXck1vNWw5SEdkUjhyeERnSGhBOTF5RGdmTmhpei04MFlsaXQ0d3hYemdCdjVSNC1ZS3hvS0VnNkxUZGhzM3Iyc0dEV0FzaHVKZ1JZaVJ4OW1KUkdFdw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.moneycontrol.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Moneycontrol",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - James Webb Space Telescope spots a gassy baby galaxy throwing a tantrum in the early universe",
+      "author": "By Paul M. Sutter",
+      "article_link": "https://news.google.com./read/CBMi5wFBVV95cUxNNE9vWkFGYVd4WmJVTXFRZVNFMG1OQU1WYnIwOUVXY2o4cTA1ZFExdWxPd2taSEY1UnhFVmpSQ01fcGQ4bVUzZVNiUThQMUhNZ0ppRXdIYUxTT2NLVjdNblItR2E4cl84Q0E5RHBwUUJxMHNZMFphMW9POE9UQmRIdXctbmJ6WlNXM3lxSzNSUjltVlg1VnFPbHVaa3dJbGxTbjhwbDhvX3d5TVRSTFNUZVM1MG1abGRVeUFZZkhWdEtaN09sRTB2Rjl1TXBvQkdNQlNwMThxSlZqRlItbG5MSUZtbkFZUUk?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNWtOVWhQZVVOUFlrUjVZVlUxVFJDZkF4ampCU2dLTWdZaFJZN3JLUWM=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.space.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Space",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Abhinav Singh",
+        "author": "By Abhinav Singh",
+        "article_link": "https://news.google.com./read/CBMiqgFBVV95cUxPS0VIeUQxZHdOV2FlOTJoYTh4OUtocFMtejV1Q3BNQ05CT0tlSzg4WkR4eFBjVHlGcGRwWHNwaU9BME1tUFNGNzVsdWRKZ2tDeHdJZk5YUVJaX0VPeW1XUDFJVFE0WlI3Z1RKZjR2ZDA0RUFzMU9GcnhRMnoxdUNSZHpRYmRWVjBlTjZibjd4VmtvdnR0TGpoRzh6eUtrVzNrUFBKSDk1blNNQQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.ndtv.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NDTV",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Sheetal Kumari",
+        "author": "By Sheetal Kumari",
+        "article_link": "https://news.google.com./read/CBMi1AFBVV95cUxNLS14dzRLLTRmeGRTaEVoMHhiUFpxSHh3YzRpQ3R5R0t4YjBKY0ZFVURULUtjQ1lwdFdkNzg4Tk55WVROMWU4Y1ltenFkSXhaS21uaTZwbDItdTVqUEdPZEVUY192OWNlZDdEa0F3UnFIUVN4bkNoWDdtSVI5ZDE4bGtMM0tscHFILXBRUUZna044SDQ2V29ucDIwMGRwcTlvOE9RTHV5MDBFaXFGb2R5SnViTHVmOGZNVzVqQ0dXV0ZqRGZzVllKc2tLTkd2d2NMQ1pMM9IB2gFBVV95cUxOZ1BsRzFUSk9JR0haMWNrcGFXdWJDVkNpZXMxc2RfdHNGdEpReWVRSkp0bDlUMjVldU96c29VS1h3Q29zNGJrQ1pjS2pDYWxEUFBaYUNOSUxUT0kxelVvUkU2YmlxUnZLeFd1UUpvUmNpdHRLd2lmM2Q2SjdiaEZQRVhqeDhsQ1J3V29jN3BOZVJicTcwSHdjMEUyckxiRjZQRHRnWWdLczB4TXVTYk1DRGRWY0k0X2JfT0xKOE1peF9RMGY4WnF0Ul82SDBlejN0a3pkdmtSVGtUdw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.moneycontrol.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Moneycontrol",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMikwFBVV95cUxPaFN3YTVDY0g4MEZEUjdkYTlpeFVlekEzSnUyVS1OdHhtWTFsQ1ZzUUlldVRnR0FfY05vbGhRQW9YeGhTaDd4UHdacE82RXBNSGJFQnJ6dmk1Z2lGcEhfeG5XRkFjVHRDSmI1aE1ySFdsc1BfQzg3Q0hxM2JnbFViaVNfYVZqb2p6Z1poRFdUVlVEYzQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.sciencealert.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "ScienceAlert",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - 'The Alarm is Sounding': ESA Warns of a Space Debris Crisis",
+      "author": "By James Darley",
+      "article_link": "https://news.google.com./read/CBMilgFBVV95cUxNSWYwSE5ub01UblpRTEtxNmlUTXlSVXZpcXdZSTMzaXd3U19obzd6aHd2UTA2Snd2Z0FDMjE5N1Z4Wm9iSl92Tmd5Rnpydk1majhxMm9sU2NqV1dFYm9KSjczVlRSUUtQbXotTjRsa1Q4MEZPSlVHVFQxTDVZODYxREdpd2ozUHJ6VW9SV0Q0U3hjYlVTX1E?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNDJWVGhRT1RGUU9UZGFTbG94VFJEREFSaURBaWdCTWdhbGxKS3R0UVk=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://sustainabilitymag.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Sustainability Magazine",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiywFBVV95cUxNMHhMeVNIamNWSEw3dXdRS0dOdzk3aTYzd29hY3cyOUtpWTNObE5aOU9aVlJCeXdiTk9feHhpMy1UeWVscllROHJKMS12QmxTbWowdEluTnFTMTdrZ2o0VldoY1JmZTFVM0dBSHlXdWxub00tYVIxLUtvRmVNcUwzQ1BLWDZrQ2FyQ3J3VVFQb0xETTVDQjdBaVNOZkNveGEtc2FhaFNGY01HblRCaTVmZmhyd3BINW0yZUxSVU9Ib3lxUURnRzBwYUZKWdIB0AFBVV95cUxOaHEyZkYzRkpJTGE5WXpFS0xCenBqSEtHcmtVWUlna3Z1UTZ4N2NhZ0xJLUZxRG0wbVFuT1RKUDBveUhsa0ZveEt4M3FMYVJTbGowTnhGSFdxM3FIRmNERHNqQjZoSy0ycjJJbWdUSVBZWlQtQi1qWHJLcEdMSG1lb1FHa0VtYmtTYngyVl9yVVZmNnVvd2pYR2NyY2lmSEtjcExEeFY0NFdZVFhZdzRibFdQdnYwNXhmN2M2Q3JtQWxydWF6TkZrWk9PTmRHYWcy?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://infra.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "ET Infra",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Adam Cailler",
+        "author": "By Adam Cailler",
+        "article_link": "https://news.google.com./read/CBMimAFBVV95cUxPNFNybG5oMkZicUwxT0tOX3hWRVljQzVFTXBGVmVTWXR0UUcyM3Y2bG9TOHg2YkVoVk42Sm5KWjVUYllQR2g4bHRjSkVpT3IxOTFiRUFWLWZtaTN5dmJ5Vkw5cGtiY1dORWFmZW5XbURfV1lscndweHVIaDhqWkRPOTVIRG5hdTdIYmVyWmw1d2VOOEJtUDVSdg?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.dailystar.co.uk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Daily Star",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Ben Sampson",
+        "author": "By Ben Sampson",
+        "article_link": "https://news.google.com./read/CBMiwAFBVV95cUxNUGs5TUFTNndobEhBWEdxTGpKbE1sekRPcmdLWE5lQWpHNkZ5MURyT3JWYW5ZQjRablhrVVlUM1RTd05nT0tvMDNOaHE2bG5rUmdzTlo5cjhLTEp6bmR1Mzh0anloMl9UUVR5NVl1REtPUDQwb1cxR2lKY0R4NjE0VVdCMF9mN1lQRTJLUTFYaVFvQlJfcGNlMkpJNzhDbnY5NXpKMEZCMDE4LU15aXBrdGE1c3p5Y0taQ2x2a2FaejY?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.aerospacetestinginternational.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Aerospace Testing International",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Saturn’s Rings Are Ghosting Us This Weekend",
+      "author": "By Ellyn Lapointe",
+      "article_link": "https://news.google.com./read/CBMiiwFBVV95cUxNdXpfZkNUQzBMWDF0RzNrOFo3bDZDTml0OE0zLUtUMFJTa2NWNDFaNktaSkhuMkJJRnlqWE1zTWpwRktWTXVLSDlFNFg3ajIwRmpZVWM0THhFLWlrMEtZNl9KbmZvRHBpdU1tazNJWS0wZFJNZHJJUzdaMnhhS0gwc3NGdEdHaDY2S2Fr?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iJ0NnNVBXR1EyUkZaaE4yOXVWekowVFJERUF4aW1CU2dLTWdOSmNBWQ=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://gizmodo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Gizmodo",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Tom Metcalfe",
+        "author": "By Tom Metcalfe",
+        "article_link": "https://news.google.com./read/CBMiekFVX3lxTFBUUnNDV2FmR2N4Z05sNG93YjBFMWtwRVh5RWlpN0J0aGZlTTAwcklhbGs5dGo0RkNmTG5EU3FGNFVYZ25FNkRaRmY5MFIzN2RYcWZfT256NlRUXy1vOGtkc3NVUHVUYV9TOEpZODVIeGRLUUNVMXFTYi1R?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.nytimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "The New York Times",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiiAFBVV95cUxOb2hIYVlGNmhOVVJLTF9MTTl2MzRrczkzMU9OUnRVb3dCZDNSUzQ3clplUU0ySmRlV1pIc0RENERqQkFGRERKQWRUbXM2cDFRQzZvRDd1R2xKSW4yZTJpZGZxRHpUZFkwN0ktRllaWjFrcEdnRG5ZY2wzYXRHcWxidWp0eVRWYk930gGOAUFVX3lxTE1KU3VNV3YzMEQ0U0tlZVZWWmFKTUlfdzVkWEt4WVR6VkNrTHkxMk9mR3BiUTNna09fLUlfUGgzUE9kUXpqLVRzMXl0QWZvbmMzeW5rZVFjNWwxMWRBeW0xV2tRenNXdU5rczFIV2psWm4xdTlxNWNZakQ0SjB4UUk2VE9RcjhmNDY5SzhYU3c?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://inshorts.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Inshorts",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Angela Schilling",
+        "author": "By Angela Schilling",
+        "article_link": "https://news.google.com./read/CBMiwwFBVV95cUxPZXktdXdHSkx0ZXpiMFhiaUtpQ0V1TjFzRE8zZjBVczEtY2V3WlBuZW1HcXhvdjR2V0g1WmRaSlBjalV1T253RmpMRTBWcEhTdHh0QmFvZERyUVN4R3pwWUswY0ZFZnVqTDYwdlJ0MW82U1Q2aWhyWXZ4S1hnLTB2QnJNYzR0Qkh4eE13OVhzLU1sQVVlRlhabkhuME9ualNYSVQxMGtHUlVVYmlXMWdKSzRMT2k2Q1hCOWNMQlVRZGZGZ1k?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.2news.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "KTVN",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Perseverance rover finds rocks on Mars of possible interplanetary origins",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMipgFBVV95cUxQeTRMbENQMTdadnNyeWM0anM0NXJPQmQtVUNoSkdnbmdTR1NrRlc0WjFONlhxM1pEd1M2R0JDeVpsSFhIeDlaYXNLZDF4WWh3UXFLbWRpUldodk9NQThYRVZHUjRuV3FtdmtjZDdiZHZJS2RYcC0tMjZFSk5HQ052b2F1ZDQzUWhCZU1naktWa0JBeEgwQ21OMWZEN2dJbWpIWU4tZHRB0gGzAUFVX3lxTE42VTlUSlVZSTZZWW50NFFITUFoeXZMQXJMV3I2X1ZnRFFuX0tMbDRONTkzTmdCNl9jTkI5WHM4MHZwZ1pGR1UwNzRnTHBOcnNad3BCRExQT096UURkQ0psMXR3b0lzTTNGa09ZdFRDNkRnVUl4TzRzTEROb3YteEdmaGx1VlhEVzBIdHdnTHhrNlpEZWZyUmJqRmZuV2NNSDNZM2pTc2U5c2U3c1JYU25QN1l3?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNW1jM05pU1RkTVp6aENWVzFJVFJDZkF4ampCU2dLTWdhVkk0WnFuUVU=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.edexlive.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "EdexLive",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Ravi Hari",
+        "author": "By Ravi Hari",
+        "article_link": "https://news.google.com./read/CBMi3gFBVV95cUxQYkxzc2pxSl9GSXNIQUhHNE9ZSTBvcDI5RlVzX3dLd0pHa1BsQVlyWGZVeFFNZEN3UE9mc3V4bVJSRGU5cTlqeXY0azdVampzemRQOTlvZlRvUlVmZkgzX2ZSSkxTTjRGeFdSTllXQXhHXzdDaF9PS0NZYWExYUx4c3cwNVNPODVwQ19kRXliWjdwOG1yNldCckxobF9tZnBMNE5TLVNqMVhIUVZFc3hNQ3A2akpGbHB4dlp3dl9vVDRHLS1NckVjOWpnRlJCa2hwZ0ZuVHVVMUd2WlkzZmc?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.livemint.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "livemint.com",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By David Nield",
+        "author": "By David Nield",
+        "article_link": "https://news.google.com./read/CBMijAFBVV95cUxNNXFDYjMzaHpMREVNX25KbWVNOXlxZFdLSzFLMG1fS3F0WnlmYTR4VzN3UWJEbWowTlhoNFZCRk1Xc3RuQWpKRkN2TjhnVUh2Zk5uQ3pfaDJJNjNUVEsxSnBGcnZ5V2poS3JNQ01zTmtRa2Z4RV91eVA5ZHEzMFNJOHlSbzhLMm1FSUtCcw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.sciencealert.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "ScienceAlert",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Ryan Whalen",
+        "author": "By Ryan Whalen",
+        "article_link": "https://news.google.com./read/CBMiqgFBVV95cUxPTlVJc2VDeXVUN3IzSVR4a0VlVnRqclhxdGR4SFNLQWJoOTVVMDl2X3dIZFNGVVNjYWI5Nmk2NVlVRDgzdzNjNFI0dFRCaEpVajB1R0NTcXhIaEJuekRxMkhMbGNuZ0NpZkVYek9xc2VyVzRpQk1GRmtMaHpjNXpQZ0ExV0ZyR3dtbDh2cGxSMGxIS0RCOFBYZEpDd3MxcVE1QjVHUUgyZHZxUQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://thedebrief.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "The Debrief",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - In a first, astronomers spot an explosive burst on a star other than the Sun",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMivAFBVV95cUxORGlOdk5pVjlhbWpZYnZpbE9zRkZpdHR6Z0dUcTg1NkREdjBSTGNQc240NEtfZWMtTV9RRTkwMFBhdWU4YWZTNzhTMExuZERiOHdhZzNjQnVSSkRFQnlDOFF1VlhUdlkwa2pMMHVoY3FEbnNxN1M2RDdlTE5lWmFNWmFScU5CU2pKMVNFTmRjajlnNlpnX1NkY1J1QUVlSF9DY2NfVjZtdmJvQW9ZWTdXOVo4bXl4cFVPSzRMRQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNVBTV0kwVW1NdFUzcERia05sVFJEZ0F4al9CQ2dLTWdhUnNwUk13UWM=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.notebookcheck.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Notebookcheck",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Astitva Raj",
+        "author": "By Astitva Raj",
+        "article_link": "https://news.google.com./read/CBMiywFBVV95cUxOSDBwd0pTUk9NYy1tN2QzSnl4Z1dMNWFIVTJvRHVqOVhGMDBvNmxrSFJZWHM5Wms2anBjdFozc01iVVZHcU9WSWJ5R3RHV29ZbXVXRWZfblZkT01fNEV2SkxIYzl2aGdLR0xSRGo1YzlVOHFQNW8yT2QxdUh2bjFNeTlEd1hndmhDOFktM1E3dF9nSnlQaGNYYS0yRUlVRjhaQWliWHljTmVQV3FwRDBNcXRBSTN4QkJROEh5cF85UUJGaGZxSEVnWHQzSdIB0wFBVV95cUxPaGdTTm55TURMNEFFQUs0ZHVpaHE4cXZaWXBPRzNuWU0xU2V6TDJUNDBjbXlSd2swcFhQdmJ6aGVMNDBYS0NpaE5iRU5jbHpyUlJLeG9vdFFhemJtbWZnSmpEdWl6T18wR29TUTNxbDFOdHUxQk1ZN1dFUkhyNHB6VmpwSFN2TnRTazVpRG5OdmlHYnVCUkJnRTJycm1RRGpTT09VZU5tbERpREp0T2ZQNUZoNTNqU3VTaVhzU1VyLV83cGtDdVdtVHpoalZIOXpQQlVV?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.ndtv.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NDTV",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Kerry Taylor-Smith",
+        "author": "By Kerry Taylor-Smith",
+        "article_link": "https://news.google.com./read/CBMinwFBVV95cUxPVTNXT2VuNnlqcGY4R0lkLWloMDc3WkdMM1ZhUHdoVl81OU1pczBocFFKYWY3RzZWTzB0cmVlcm5XVnRObGhEQkF4dVlqeGtuMXRib2VSN1I5V1lNWEoweTRFUHBrX3hCcGNRdTYyZlA5NTRDWXFWb1JQMnQwRVNweWtfOHlRQmlZcFFBajJ3b3ZWSjZUcHVVdjZSLXNERnc?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.yourweather.co.uk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Yourweather.co.uk",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMieEFVX3lxTE5oSjNweHB4Vm0zSzRSV2xzSlNJbHltTXFOVTc4SnJRMFgzb3ZtZTU0U3JWaXJUOEdIaE5lOFdZbFY2b21qX3k0TG0yVWlSeE1QNTJSeUY4T25qVk1WTG9wTmlTRFY2ZnBPZkt5WTNzbVJQTTRDNlFwTw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://indiandefencereview.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Indian Defence Review",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - AI uncovers Earth’s oldest life: 3.3-billion-year-old traces found in Ancient Rock",
+      "author": "By Sheetal Kumari",
+      "article_link": "https://news.google.com./read/CBMi1wFBVV95cUxOTVU0dDQzMmJrT296eVJDTWRUbnVZVElnUW9NeDgyYXFsM3ZaM1VLT1NXM3B3ZTZxb1RCUF9DM2VLaDJlRlp5dHc0Y0dGVGNrQ0NRZWVmdGZjVWZ5LVdnemlxTTN2R0pPS19zRG9sSE1BVkdRNWE4RC0yV29jMkpyNU5HNXRLMTAtbnowX2pVcXI5TzJDTGpzbEZkZXlJZTZHUjdhYWtpT3o5aDZUZS1sM1FnN3ZyU3k3WDY5STZ5UmJWNmJoTGlMOUVPVmYzMmNQVjg0U0Nic9IB3AFBVV95cUxNUWZhQU1IR1JRTDRYQzFuaXFoR1FIbkh1UmpWM19icmZ5VG1jOFRibk03ME5jaHI5TllKMXVlNU55c3NrVV9DTjlxSnNoTmtGcHdqdXNSSWZqaEQtS2VqSnFSRkt2LWNDNzFrUWdmeFhVRkk0WFN1X2xjOC1VNjVaRVFOTUcxcEZiTGpSWlFxRERndXdMcDhXUF9EbHRJN0FhNG9mc3ZCQzF5akR4RFBQVWNmODZ1QlVPdTc1WUVVSGEyclF4dWVvMEtrSjZyTGV3dHJTOEtfSGJ2MFhT?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNVZTREJ2U1hKT2JEQlNUV0pMVFJDZkF4ampCU2dLTWdZbFZZeXNLUVk=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.moneycontrol.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Moneycontrol",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMi4AFBVV95cUxQMHZBZjd6czFkM2JxTGhFdGcwcnd4aTdFY0FlNVhablFvSzBaUldYT3FRc21EUUhUM3ktNmxhc3VpcDRhc2t1U0NWU2oyRUdOWF81VTJBS1lZWG5IX1lHSGs2OE1hbnllOE1xdXJldjZZTGhuOXNsYnJfbjVmUEQ5YnRpakcxOF9qMUlqajJwd1dKOEZhQlhndkRNMUhOQjJvY09UeXpadGF6MVgxRGVHeFVMT3JteGlLQkl0UHhXU1BRdHRtMGZJTm8ycU1vLVVaQWhFSkZ1X0xkQkJwQkRIWtIB5gFBVV95cUxQY0dyc3IzVWtHYS1mQVlBbmdFQ3FVYm9iVWRrMVZnN1RSRnNpZUtRTzJxZzNQRmV3bnVTckV4eFNVWlBYTjFmbUc4TTdKSXlDNVEyNDJxMURqVnB4cS10OXVaZ3EwZk5QVlR5UjQzYW1YLTZ1QkhUVzdtYmo3UkNLN19DQ1dhN1pGZWZmSWtHWlgyRVVPbjVkbi1VZ0l0a3I0OTU1NzUzeEtIZ0dTQXhQOTZQaGtyS1c4X09hbFZzU2hDWlNFZnZ4YjdJQzc1UGxnQkNVd2VEbE5pbkt4TFVUaEt2WHlLUQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Times of India",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMirgFBVV95cUxQczNWcXU2aVNXbENPM1Y0T2swTzVwb282TTNBUEpYcmtFZllVMnhhMUd6cGZ0R09fQUJGUkxqX3JWSTVEcVRVMWo4MkRWWlJZaV9ZRUdwVEgtRnFqLTZYNHpUR19DUy01N3VMS2c1RVhxbFlaZWJmazRUbHZWdW9OaG5XVHNpNEFGN3otS2tvaEpaVGgyUjBNTkhTTFlPZndmVVNhNHN6TTN6V1d0NXc?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.economist.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "The Economist",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Michelle Starr",
+        "author": "By Michelle Starr",
+        "article_link": "https://news.google.com./read/CBMirwFBVV95cUxQaFdPRDhCVnpHNXBmeXdORWZ3RUZrRnFOVnBPTkRSWDk0WlltNER5NWpFbmNEZUViOHYwOUNZYUJDVWMxek5iN1A0MmhVdlJJVUdiMmdMSFFpZm1haEJadW1yQk5nTXVlcFJGSTJXbWszZm53YUdYOWFFNWFJRWhEZDBJR3czbER6NHJ1YkhwNGlqVGtmSGZUSGR5YUc2WWZsNzlCY3lLVWZSMGF6bThr?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.sciencealert.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "ScienceAlert",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Scientists discover RNA molecules from a mammoth that went extinct 40,000 years ago",
+      "author": "By Itay Gal",
+      "article_link": "https://news.google.com./read/CBMilwFBVV95cUxQMmtvZ3p5eXBoVElDbEIxNUphNklVc1FyRUtldTc0WWk0TDQwUjRaUXVoYVBmdkpyVzZzZGtQRk5meFhmeW1MMGV1QllTMG16RG9aOS1sVGJjNkNBa0RnNzZ1bWFrNEMzajhaTFFObEdYUnNQNHNkWVpwR29XYTZzeDdJbnhvLXI1S1dwUHBRMXkyQ1FaYU4w?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iNkNnNUxOekZ6U1hWSFNFc3RVMDFmVFJDbEF4alpCU2dLTWc0QllJZ21KaVVtTWhrMlpFN1VIZw=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Yahoo",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Astitva Raj",
+        "author": "By Astitva Raj",
+        "article_link": "https://news.google.com./read/CBMiowFBVV95cUxPTHQ2TEp1cHB6Vl9WMFdhaTlJdW5uRTRrdmVPdzJtWmRYa1g0c3c4T2RTUW9ack8xWG1MWUFQeU1mdlRpWERGVDR3R2V5M2Q0QV9nTDlOTUp0VzNtU0gtSjV2aERpVXhFMW5INTRiZFVyR1B1LVFDSEtPdExpWVVOZGZPQUwtWkI2SDlBbzE5YndUSkRIR2VTbDJudlBNMDl2T3Ew0gGrAUFVX3lxTE1PVmx1R2EwQmE0anp3aTVFN01ob1RkQlBmWHpyNXRuZzZXRlBoT2hEeWw3aHZGd3hCNHRSV2xMeXN6THZiX1pQLUszM1duMW9WUGxQSjlwNDJPeWJCTEZ3eW9RTnM4NzA5dnFhYUpadzItaEtsOWhUc3V6cFVqa0NzYk1tSktkUGtQUFFqMV80MHgwVEh0VTViN3JlV1IzLVNOTjNmWVpWSm5aYw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.ndtv.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NDTV",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Kit Roberts",
+        "author": "By Kit Roberts",
+        "article_link": "https://news.google.com./read/CBMikAFBVV95cUxPM0t1VDliYmJRaUpnX0xfQ2FpeTRMd3QtWkdGMzNSMmFnaHIyU3UtcUdsS3ZtR0NoVjk4TkpTVEx5M3F4amNYTUFJMGVBQzVhZG5Ddzl0N1I4ZjhMeGJDeFFPQldOTEY3ZFAzSXV0TE9GRFNEWnN6TjJta1E2MHJmRFNyTS02ODVVVG92eXlyX08?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.unilad.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "UNILAD",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Alex Delia, Lawrence Banton and Evan Hummel",
+        "author": "By Alex Delia, Lawrence Banton and Evan Hummel",
+        "article_link": "https://news.google.com./read/CBMikgFBVV95cUxOYnZkd1VLaFE4WUVBZ1E1Vkd5M3hpdHc4WFNoaWp1QjBpbzZWVjQ1UV9ja1FpSmx2d1IzZW1ESjNEZFBaM1dVNWxsSlpVLWtIWTNweGk4S2Z3TE5JUzNiampYRklldHlHY013WEFFX1U5bHFSVzcwZU8yaWhqVTNMRUI2RHFrUzltX080U0dRT1BDZw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://san.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Straight Arrow News",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - New eye implant helps blind patients read letters, numbers and words",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMiwgFBVV95cUxNNUZDamZ5Q1lTaDU4c2N6WU9ZYmo0amJGS1JCUC1vcHd4MG9ZXzNVNktIUHJkNVBYSV9YUVR0ZGlSNjRWSFJJVHhVSzN2ek9PTjZhWUdOQURuOWY2a3ByWTJlaFpwcGZGeHdieU5SZ0MybnZlaDVvMTQwWmVYcTBXMGlXemIwRkRMVHFoSzk4VGZMVVhsRlp3MXpaMjQyN0I4dXNfU09xcmRMc2tqYWR4anpBekRoTS1zRkxsRS1RZmh1QdIBxwFBVV95cUxQNzdmTFd3d0VBUE5qLWtuYlQzTzVuRXpPeDRpZ2UyMEt5VDczRHpWa2lsOHAzdG9lSFRoTDFKalNPVmh2eHBDcUJOU0Y3em5fTy1XVHJ2YXJPaFY5eE5Pa3RnS1BOcXNzRmZPdlhKVFpUazBfTGRqOUxpUFJjbUlrZ0xGTkxIRjBwRlZEYl9VaF9sTDdFRThmV2cwa1VtRXpLOGdDc2VWbXFmM2dvdlVBalljMEU5ZFNTT1B2TnllaTF2Y2d4ZTZn?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iL0NnNXJUMmxIY1RsUlFWVjBZVkpzVFJDZkF4ampCU2dLTWdtSklZTDBKS2loUndJ=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.mid-day.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Mid-day",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiugFBVV95cUxOU2U3TFRNc2c0TGYydDU3RWd2M3I2QnhpeW9PY2pGOHI0ZU42aUNMcG1fdVJSMDdkQ0h3Q3BEeGx0LVZPVVN5cy1mdnJ3clg3UF91N083Q3VMR25GQ1JjRXlndEZpa2pCMUx6ZkpUbnh6N1N0ejktQ1dkZU1TVjU5VHZlZEZkOC1rcHg3ZXpRdG5fdVhFbzJCN0VLa3NxcnIzRjBMMUZrWnJRaS1EaE15NV9iRDVqV0JDeWc?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://scitechdaily.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "SciTechDaily",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMinAFBVV95cUxQUFZhUE14S1VoYzhfWUV4eDk5SW9EMExQbFRFY3N1YUFFN3NQQjdBYS1JaVpZREc5alkzZjNvYVczOXI2c0tOTmFXVl90dGJ2NHlqYkNsVEZBbi1ZRWpvazFPZEg1NlRTQVRWYVpZRXBOSVZnUGtWR00yR2NWaFBPVTVVMU44NWZMS3pmQU56Q1Ixc2VXN19yaXFuNFM?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://vocal.media&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "vocal.media",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 2
+  },
+  {
+    "primary_article": {
+      "headline": "More - Solar System is racing through space 3x faster than thought: Study",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMimgFBVV95cUxQNmIyaVI3ZUZ3YVlKQWlLaWxJV21xYXloNk00Z0dqbU56S3FSTXhnei1zbENVMy1xRVhhbXR4QnF6RGZ2SFNaT1BEcGh1b2JXRXFacjBNaGxjSkR0QWxmMnJRa2JjYUdSanNaaXY5UXBsUURuYXVlVkoyX3ptNjl1Q1JUSDJHaHc4QlBkdVRxVm9oLXh0eDE3T0xR?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNVFaMDVzZVVocFVERllTRE5PVFJDZkF4ampCU2dLTWdhQkU1Q09NUVk=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://english.publictv.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Public TV English",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Eric Ralls",
+        "author": "By Eric Ralls",
+        "article_link": "https://news.google.com./read/CBMikwFBVV95cUxQTW5TbExzbms2UXVRSk5SNXFrY0ZJX2pTdlNLbmZ1RkFqMFp2ZmF6RlBaXzZ1UUtGTkJLSTM3V3BYbFRncV90cFYtRWdSTDFBRFlxLXlFc0taQjNfQzA3TUdVYl9LZVBWNXZBM3BZQ2hFemtJdk9hVHpSMVFFUDhnWnNFMnVZbjhhUjNhREt1a2lwTHM?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.earth.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Earth.com",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Mark Thompson",
+        "author": "By Mark Thompson",
+        "article_link": "https://news.google.com./read/CBMipwFBVV95cUxNQk1aQVFXa1RhVTM3emdYWFFwcFNKSUFiQUFNMXZiN1ZNTHNmZDlZeUQ3Y1p2bV9IWjVYMm9FRkh6akhtZnhXNEZMTDdKYVdFdXIyVWF5eDVyVk1vTkgzdzNqY1JBb1JhR04tWm41WWNIM0V6clItcFFJckVGV3o4RnFtY2tMdnNfZVhFU1FuYkFsUDBPSVhTSXk1VUJXRkJvb1N5YU0yQQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.universetoday.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Universe Today",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMizwFBVV95cUxQQ0RQVkdERDNrYTF3SldlcTJEQV9iZGc0eHZVbjdqdjhVd2xZdDhEdFBMZWMtb2o3bEpzY1lqc0RhdkxwWDM2UENJNXdoc1J1M1duMnBvMURMOU11djZ3cEE5QXFwMmI3NGRhMzdFYVFwNzFJQWZ4Nl95VjVSb1I2bDBsaEdRZTFJMEpVb3hpRVZoWjBXMjl0dDNDaElhZVdZSnk5TzMwWW1kTjlWQ2JqamNyZFJFSjJtV2JfbmVPUnJTT1pKOFY4b1hUZmhQb03SAcwBQVVfeXFMTkZBVF9CUTlHWmQwLWtfWlVRaUNTNHdhR1FUWVFvQzVYbjBicnBNSV85SWxic19rOFJmS3h5bEJDWFY2T1BpLWhHc2gwSWpVTEJ5TjRqRl9WX1NJUFhsNTB4V2RUY09vYy0zVHNjM1gxRU0wOEhPTzJ6dHVBMTVZSDZiaUVxNmZCOFRMRlNjdlFsZjI2UHU1aE44Vm5rMExZYmZUa2dobzRra1lLWDg5cE11UDU4cUFvSFJ5RnR5VWRrRFlxM1BsV0hwT25R?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.techno-science.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Techno-Science.net",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Scientists discover 'old and calm' region beyond Neptune that can solve several cosmic puzzles",
+      "author": "By Anamica Singh",
+      "article_link": "https://news.google.com./read/CBMi1AFBVV95cUxNUWZFNzVTbF9kdk9pR1ltVURfVzFjclIxS09NQmtwWlZHNWJvQ0hzWkZCZF96dEtIaDk0b2NWck80bEZTbUpZemozNktteVYxQWtlTDRzUHNDZDF5NHhKZXk3dFphRVUxWG1uSE5wMVFjVkdHd0E0c3NlMU1xLXJUYnloMWoxWDMzZ0dINkVRSDViTkZJdXJ1cmozMFU3NVhwU052aXJIb05PdmRaNlFaRFFnQWFscVNDbDNUOWNiTGtZdlVwXzNRVTlXVUpUODRycEpOcdIB2gFBVV95cUxOYTlmckVCWDg4RkJfRFZTLWQzOGlYanJ4dndNdm1SZmlIbHVzT3JMX0IwWXo2V2tMX3haZ0xRbi15NXZyVzhCXzJFTmxkVV9QUW9RclJUeHAxQ1Z3NnJxMG9zeEZjbjlGNHRub2pmLXhlMnkwVUJ4dFREWGZCbGUtNGZJUDFVbU9SSFE4TG10X3B4NE9Id2pkT3VSaWp4d25GVlBWRzJ5MElOVzAtYjM1TUpER3QyRm9IdnZJUUZFMUN1cVZqcGppY3lEYjBva0hUUjU3cERSN3Ftdw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNVJTMlJ3YkZwRFlUTkdjR3M0VFJEZ0F4aUFCU2dLTWdhRmw0Wm1QZ1U=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wionews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "WION",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Leah Crane",
+        "author": "By Leah Crane",
+        "article_link": "https://news.google.com./read/CBMiswFBVV95cUxOV012UG9xaVBUQnlrTi1MWEc0RDVERkRTYkNILVg0OEU4cUlvYktrOHRDVERhWVExZmFmX0lKazR4R01jQlJpTGFfdDFpaFlXSDZvV21WYTNlQTJwZzNDMmlXMHg1THFpM0Nncm94UHFERDY3VWxhZHcyMzVFWTNabjlVb3M4MWZCTFdxWWNYeUszODI5NVFxa0dDX2RBM193NkFnTlVxQXI3OVhobUl6eEs4MA?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.newscientist.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "New Scientist",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMihAFBVV95cUxPOXNtWG9ZUFNxUmpNZ256bXViV3I4UzNvWVdYVXR1NXZ2MmtobUl4a0xwWVNGY25ENVk4Y0xjOUdNSS0xbjdKVTRDeWcwSTBadmk3Zmw4ajFNOXZDNzJ5OUlBbXlqeFBxMHJhZWxVeGtUZW0wUTBPWmxFdVd6YTdUdWYwTFo?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://phys.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Phys.org",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMifEFVX3lxTE9KUTlmNHRpMUxXcnRzbnlpUlZDXzl6QzVlZG93MjZsUTRZNTZFZEI2emFScE1uZ3RiSnc1bXhWWHJITUtDWE1qd1ZjdDVYZDJTejBkcjU2TE11dzQwZFRYQVpDaHlaWUU1aEFOeF9uQUpWX0tjaG5rVDAtU0w?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.eldiario24.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "El Diario 24",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Understanding new neuron signaling mechanism for pain treatment",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMilgFBVV95cUxPaTN5WEtRajRXUnZtbXdvMzF2TGhORFVNZG96MHZudzdzdnFiZ0dtRmNJa2tldEN6VkFjYzM2a25OcXVGOGxkQzNCV2lBaXpKQkhoZTV6Um0yMW1iU3BUUW14R21lZnFFS2ZMdmd2em1nVm9QY1BIQXdJdVNKZDYtR0xyV1JCNDBpNUdKcm50NHI2OU8tbWc?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNWlUelJTU0VKYWNqQmZSelZoVFJDWEF4anlCU2dLTWdhQlFvb3VMUVE=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://medicalbuyer.co.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Medical Buyer",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Stephen Fontenot",
+        "author": "By Stephen Fontenot",
+        "article_link": "https://news.google.com./read/CBMihgFBVV95cUxOMHVnbFFpTHp2QTE2R3k1V2xCLTZLeGJmOGI4N2s4OENCZGtOWE5CNGg2RVNiOGM2cEEwN3pSTDZhTmhUY3NjX1E0RmRGeWhOU0pRdktxV0gzX0V2SWJDcXlJaHV0RmppUjctcmxMelVMai1ZRXJZRlV1RUhnSHV5Q25uQmN6dw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://news.utdallas.edu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "News Center | UT Dallas",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Stephen Fontenot",
+        "author": "By Stephen Fontenot",
+        "article_link": "https://news.google.com./read/CBMiZ0FVX3lxTE9tWll1aDV0ZUx4Sk1KNTY0aVhUcEN1d014RXZURldmeGFzNzQ4a0tuTkl5VXlIckdRTjdydUtZcTZkQXpTLUJ3TnJ5S2JrTHdfVlVLakprWkNqa3BmeDg1TWk2azUxdG8?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://neurosciencenews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Neuroscience News",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiyAFBVV95cUxOU1J1dnJYU1BkdXc3ekNEQW1jMm1NcG56QllaRDNjeXpNQlcwMHJULXpQT3JZSHZsUURqblZCVC02STFVZHpTS29NYnBJZS1HRjdZX0sxaS16UmxYS05EYUpEay1TZXFRXzB0aUk4bXgzYU1SWVJUNDJ3Rmh1QjZvM09pcnhoaDJScUNtOU9tb2p2bnZvTFpPS251UjYxODhlSFF6aklNb01yTUtlaWR6NXlOdDZvbnR1Uy1nZTc5a2JmVnNqWDRIcA?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.genengnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "GEN - Genetic Engineering and Biotechnology News",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Scientists uncover giant asteroid crater hiding in plain sight, and it changes everything",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMi9wFBVV95cUxPMkQ3VDFFM2JkdVkzWmdacE12NlJtempYcGNGNE5xaTFoLXhKb2dLYnpHUUVwaUhTSDZ1R3Z0UDQzSDZOWHJSMzEtSUh2Njhfbk1SWHg0eG1pYVVyNFlKU3J0WmNUVktpVHdSdndPN0JOQnB2aXBvdDMwcTIwZkM5T1FLVkpTSi12LUZsVHFrWUdUTjdGMWItVWtyOU0xRWhURW5UdFR0VFlJZVNwSHU0ellaWUd2SU1ub3ZPelZRa2N3XzJJQ2N4TmRxMkJjNi1YS3hNck5SWk1seU9lNmtuU09PU2REdWViYXloM25xcW9zZ0I1cjdB0gH8AUFVX3lxTFA4TWQ1dHZIN2dqWVFvSnhzeDFZR1RLbHQtb0hRc0dySjVKMl9fUHpFZkxSX3FwWEM3N0w1OUdhLWxlYXRTaUxQSlhPRlJFcWNpVG9jOURqM29ZZTFGRjRiQUp6eDhvUXZ5YnJpc0sySDYzTHFreFpJaVk3RUJlbVcySFdJV1hiOXJRRnhlNkx6R1R1WWxkV19HTEozX1pzS3VfV1NEa1BCTU1uOHJOamFFUWhGTDB4UmZmVW1tcXhSMktKaFhidVB5U19hTkpnZUNndG5tTWJPZDB5U3J5LTNCZXd4SGs2RXVlRzhUMDlDTm5JeU5pSkQ3aU5uUQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNUdhR2Q2Wm5nM1ZURmxhblpYVFJEZ0F4aUFCU2dLTWdZSmtvTDB6QUk=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://m.economictimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "The Economic Times",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By David Bressan",
+        "author": "By David Bressan",
+        "article_link": "https://news.google.com./read/CBMixwFBVV95cUxQRGdQTi1RclpTMHpBTnQxa01UdmluU1lxamVjd0FJRnBtWlRKVUpZWEVvaFpGeUhZUTBMeWJOUGRxWWlTX0xGSm5mNExZQ0xQMmh5Q1BkTFdfNlVfWF9xRXRIVDNSWHNGTHVwcG5JT1ZfZUpYY244Q29SRG82eXVVVll2X2NORzQ0MElfWmlrMnZMT1JPaGNrU1ZtOTdycF95ajVMRHFPeW9tWlNtcF95ejFwbi1Td0Y1OWJWYldOcHJVRFlHUDNN?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.forbes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Forbes",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Darren Orf",
+        "author": "By Darren Orf",
+        "article_link": "https://news.google.com./read/CBMic0FVX3lxTFBlOW5iRFQ1SWVKTEFFVWZVcFZ5VU9Rb2hkXzJjZ2NZZGllNXk1RzNwYkE4MUV5blR6ZWFKcUYwam9fRUFiZkR3VWtDdVJuUjRmaWNZbWt1ZEtyWi1rOWx3TlVBaHY3M252NWR6aXFxX0RBVlk?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.popularmechanics.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Popular Mechanics",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMilwFBVV95cUxQakV1YlFOTXF1NTJQdTVUODc0SnpjcnpiVnRrTDVNZ2w1TlBBbzRFalBfYVRyZ1ZjUnJ1UVRRQTJ2alVSVXBxNUFDekVaRmRYRC1iUFJrc0RpVEJFZm41UnNYWkV3RXJPelVxVFN0aU01RmRNdjhJYXNhSmxsMFg5aHNnMURteVBkS2oyeE5hZW1sU2JPTldj0gGcAUFVX3lxTFBIa0MzZ0FLa2xuWFdiTU9kbWlFU1FmRUZNUU1kRlNGLTlhY3Z2bl9TN3ZZc3RFampkbHJqNU1fY3diNXJLa0dFZUhxM1NQSlVJZUZabGpiaWZ3VUdocTVsczBaMVhnYVZyZ0xIWFhpUm1RbDBvRFA1eGl5NU9aODlWTXdVRDZ3dTVuMG1LY2FPUnZRUVJITmlFTXE3Sg?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://inshorts.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Inshorts",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - A Skull Sealed in a Cave for 130,000 Years Reveals the Truth About the Most Puzzling Part of Neanderthals: Their Noses",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMi4wFBVV95cUxNYVdTN0pWcU1Pb3EwZGJiOU14N3dFeDJlYmlCc3hRQlh5OVgzUW9lOURMU3BBRjZNMG53R0poZU1ucXdGbEt0UVZVcWF4WVZQd0RpZlVTanY2a3NsSXpMR3ZsZThWcjJWUkJrdHJxRWVCeVlJRUZNODV3MHpFVEpneV85REJscDdmZmdPZEdIeG8yYlk4TGpkTHBCbHA1QTc2SDUzdmpydFFTTFNOREZvcURnaW1TWmdRdGNqNTlpd2NpclE2VUtzRk1SdWtCWEVZLWxUVXVQMEtETmxxdWtSQm1aMA?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNU5iVXM1ZFVacU5rdHFZamhHVFJDdkF4akhCU2dLTWdhcFE0UnVuUVk=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://indiandefencereview.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Indian Defence Review",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Chris Simms",
+        "author": "By Chris Simms",
+        "article_link": "https://news.google.com./read/CBMiqwFBVV95cUxPWU5oRDR1QUY2S0t1ZEtPaWxoSndIRXBMWGpFcXpJMUhNSWhqTUFVaEJaT05NaktFbkRkMng4OW5HS2JDUXZGeVp4Z2tsTVhfaFRHUldubU83bk90TkF0ak44YlZVNVBkNm1mUjVpVWVkYmdidUY5OUxxMXdVQ0F2YkZpVElDa05vMmtJbUQ5dGwzLWt0Q01Wa3B5MTJndXhZTFJGbE9OUzBSdDQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.newscientist.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "New Scientist",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMieEFVX3lxTFBnckkzTnN4cjZrWXVTZUVTYlhETENPRWZUVnh2ZTV1eGdLdjFUQ3N6eW9SRldSX19SQ3VpTmZyWVpmT0tGOWZRbDdBMDNvbUZPRTNaNnRwdzNjTGRJaUk4WWtOTDJTVG1qYWF5ZEJMZml3YWZkZVY4cA?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://phys.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Phys.org",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMimAFBVV95cUxOSFpIU3o1TktmVnUxdWM2OFg2ZTRNMUxhMzFBRUg2UnhMMzhQZFhTYjhNbU9zYUtlaFJuU09GaHpyVFlnSEktRC1ia2c0YlJ5bC00WmtQUUJ5ZVRFMXVlMmhOOExCNnlzQWRMQ1FpZnVYSUZXTU5OMWI1bHdLRFYzMHNIS1FuenFUU21pa1A5TmotWjA0QmwtNg?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Yahoo",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Moss can survive space, and AI can alter poll results",
+      "author": "By Akanksha Mishra",
+      "article_link": "https://news.google.com./read/CBMilwFBVV95cUxPRGt6a1Y5STBHYVctT1QwMWhmckFmVXEyQ3ctN0ZuT3c1Vy03NkhTV1RzS1NUQjdaTFM4WVV1ajJ1YjExUld5S3hIdVRjM1FtVXZuWm8xVnJEdENHaUlfcUJWNDR1V2JJTmRoY2dlR3ZPN2RDWnFLX1dZOWF3eU9pOHo0VUVtUW9KVkZsVi1oZUJGaUNIS3JV0gGcAUFVX3lxTE1ocnRhRy1wcUNqbkhOLU4ydXJjWmVJV0Fld0xFN3JFd01EdndjNHhhU01YUThxbGptQk5ZVDNMRjVCZ3lWVkx5cWZpQ0hWS2tfNzUwV3EzS0NHX1BTTnJQUEpsNnRTRkwyY2dZNXBQRmhHMktpYmhzU0wzS1o2VXhfamFkY29JUERLUEJxV000RWc4MWd2aTJlSzZsVg?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iI0NnNXpNRll0WkZsdGVtMVBTR1JaVFJDZkF4ampCU2dLTWdB=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://theprint.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "ThePrint",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMi5gFBVV95cUxNYmV2SzBDMFQtLTZXUmFWeldaTFktWEJNVkVTVmtza1pqaHpuUndDb0JqQzJaSG9VQ3Q0QmRlWDlKQnZLWVdqQVgyTEhyM3Vra0x2NWNSYnR3cWRLM1NvZm1zbHRQajZlWDc3c3BCTGx4VENmOUljVG9RVmJQb3V3T0FwbXcwcVktbktyWGFNaEc5SGhRZUgwU2ZWVURISi1qX0swSlNoU2hXRmFpTnR1bTlBaWs5SkRIbTRxbWpuNE5ncTMwcTlTT2ZYdVFjS1FJX3dydHl4SHNSV0ZNOWExaWRJSHhnZw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.livescience.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Live Science",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Nicola Davis",
+        "author": "By Nicola Davis",
+        "article_link": "https://news.google.com./read/CBMiqwFBVV95cUxOUEtnaVluT1BUYmdhUUJ4ajJhdzh5SDFnVFNRM1AtQk9GbXl3dEwzYVFvWHp4ek82MDl5WG03RGtJRklwU1lQRDI5dC0xc293U2hfNW5nTFZ5ZFEtNWFjbjR2enRsZ2pHVkNxS214Y1lHRnQ5bTlpQnlSWDJwOVFocmRiSjdiQmxGMUlZTnVaWkpPam1GeEZkVlRsN2xTT0IxQmc4eFdwS1NZOU0?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.theguardian.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "The Guardian",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Mike Wall",
+        "author": "By Mike Wall",
+        "article_link": "https://news.google.com./read/CBMinwJBVV95cUxQb2h0YjQ2MFpRS19vbUJJZHJqU1lOUkhhWUh1Y0hHdjhzVUZvMGo3S3IzaWpMZkdDeHJXbk9DU2tlUk1SWjNJV0loa0RxM3RrNzZGMnAydkFkU2dVZkNPLTJjdjlkS3I5U0IxSHBGazBhNlpuTmVLcGRTdk94T2piM1U3Z2RQaVlGTDBPLUdERGZWRjdMU0VKeGdTQ3lUVGRhOVItVTVUVWUxWkI0STIzRkszNDJ4dDM2S3VVLW4wYUVxUVlrM2ZtTTBCLWRfc0c4V19JWlFseTdteHc4azgyRHF5YkdKT0xHSzdjNmw3S2h6eHdkaWNSc1gwYlFhRXFucVBFWG5LRnUyZTlJYzc3elVlWnJvbW5zdXFKemdtcw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.space.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Space",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - SpaceX marks 150th Falcon 9 mission of the year",
+      "author": "By Akash Pandey",
+      "article_link": "https://news.google.com./read/CBMiqgFBVV95cUxQMElSc2Jmby0yemJFR0lnQnVRdXVQT1A1N1VJcjFvcERIRmIySHR1TW1jTm1YUG45R0s1QkVsdHo2d1NzZkp6Q01JenQtZVE0bEpvNzhqMW5sbzB5dzM4T1NJUFQ0aE9tbFdXb1FIeFlKRDNyRnF4anNEeU1Ic0xkVURkTV9mNEozLVpveWx5VFd4bHZMaUszdHpybjhtc0R2RzB0cnJwdlNodw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNUdSVXhEVWpkTWRqTk1TelZYVFJDZkF4ampCU2dLTWdhQmtvUXF0UWM=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.newsbytesapp.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "NewsBytes",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiUEFVX3lxTE5objNhTXlTckZaeVN3anA3UmptX1J0R3ZBU01yWlMtLXlPUlFFTkR0ZTluRlY1ZnhKYUR2YjJHelk2WWNlVUJSYV9QOF9qQWJB?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.spacex.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "SpaceX",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMikAFBVV95cUxOOU55c2tGZ0NSMXUzTk54YTdVYzdmTnBZZE9ncVVQZXNyZGlnRndCcU9HbzFPNUlnNXBuMXcyYVNVX0E2VGpzWThzcVhSQVZuc2YteWlGM0RDQ0tZOUxHeUpMbXdWT2Y0Y2JUVDAtQ2xjekJKY1d6V2hzdmFLWXI3U0YwQnNpY2FUUXMxbDdnc0Q?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://aviationweek.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Aviation Week Network",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMizgFBVV95cUxPeGRtc0poRVFGRHhjUFBxZTNzSWlzT21SZlc5UzZiV19Fc18wNFZhMm5JRDQ3YmZlSzN1ZEhTOTlXYlZoaTNzY0kwMjFyWDU0cUhmQ0RCZU9yc2RObmVrYWk1dlN6N0c3NkZnR05rR3AweWExZVhyTlVxb05sdVk3RUExekpUelBDV0NicUJTNG9WenZsaHRKRFhJa25UVjlid0FxVUhxNGxtR1FiVG1ldFpkSFRiUzlLRlQ3Um1MYVFKMFlabmpJREhsNTF2dw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://spaceflightnow.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Spaceflight Now",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Sun bombards Earth with a series of coronal mass ejections",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMipgFBVV95cUxPRzh3WWUyM2s2RGhXZUgzWndkMlM2Z3V5Nml6RG1FMVpBNWJWamJaWTlsRm5ZdTNxU2NmaHFBZ0FzVVpSUkFjOTdTekxvWTFLUFFBajFSd1o1S25zdG9KdmNnMS1TdktBZEgzMm9xQ3pMU1dqZ1lCOTBjMWxGOWYzbVZsMUJ5bXd5UmxWaVV2V1BuRmtZbHN0OTJkZ1dBRno3TUxDZ2dB?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNXJObTFpVURSWlZrbFFlWFptVFJEZ0F4aUFCU2dLTWdZQlk0YU5MUWM=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.notebookcheck.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Notebookcheck",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMigAFBVV95cUxOZTdXR3lRVVluNzRja1ZMWU51WTVIaUdQVFFPX3JGbi11cldIdEZlZVMyZlpmbFV4ZTdMVGVDbnpZeURMRzRkeVlDYlVpMmVQajd6V3FJck50MkRtQVkxYU9LMGJQc2ZFVzEyckQ0YWpVeXQtUmRuVDRGRUFfWS1wNw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://phys.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Phys.org",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Daisy Dobrijevic",
+        "author": "By Daisy Dobrijevic",
+        "article_link": "https://news.google.com./read/CBMipAFBVV95cUxPb0lIUjZjdUFaVkV5Q3Z3YzJFeGU4S1JXMkxNYWhuel9PaXY3ZU1FT0cxdFRJMXpsZU9pRlZOMEZMd3VQLTVxZlVYWnhyMjBiczVnakNlWUhJUU5rSHZEZVNwcGNPY2l2UlozMmNVVFNLbEJTRXBKMVBiMU9NYUZOZ1dlekJPMUtuLUxzYUpROXZnM1FSVmxwakhLeDNIU2IxbF94eQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.space.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Space",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiR0FVX3lxTE1VN2t5Y3dDV1RnMzFrcDVIaFozUF9hY01ia2VadzNBOHQwaVUyZkgzZXdVelVqU3BIeXExeER1dXJqemsxR2NB?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://svs.gsfc.nasa.gov&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "NASA SVS (.gov)",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - CRISPR-edited fungus boosts protein production and cuts environmental impact",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMiwgFBVV95cUxQMXlGTHlkY2NuOG1OR2dxUVFhZ2NFQm9ycFFqSzZWRVVfbHB5bkZfa2dGMllrek05bHZobFFLN2RqZTR0UThXTXRPUURvTF85NVhWR2lKd1ZFX3ptSlJZV0I2MFBQTHhFeU8xUTdWMTR5T2xyY1paOEhsekxfT1p4d1JxTE5PWkhVVExIc2J6RVJRWDhmVllEbzNUeDNoTzJzZ3h1Umh0VFNUUlZvQmtSNUFqY2Z0bEgyWEhEZ0QxR21tQQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iK0NnNTNWVmQyYVVsWmRGbHJVMHh3VFJDYkFSaklBU2dLTWdhZFFZcnNIUWM=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.news-medical.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "News-Medical",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiowFBVV95cUxPMks1cmxYZVYwTW15YWh2c2d3VEliTHAzTkxsUGVHR1VPNl9BU1NrbVV2SVFmM1BlejdyMmF0ajRhT3oxMDBJOHdXVE1reGZscHFSM1RVMjBsdzBxOS0yMEE0U05CdW5TS1Qzc2FfeHY1VTl0R2pMWTZNUFI2cll4QUdCOXRNYWoybmZPUnpON1MtZG9oNi13SlJBQ3plUnNvT3Bv?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://scitechdaily.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "SciTechDaily",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiwAFBVV95cUxQZmp1bW94eVlzbUVLNU1QVGhYYURZdUtCaXVOVmthaTFNX1V1bHU1cEk5Q2hlRDlfeEtuME9MV0FydjZwVWhhWGVQQnNKeFpvbnlzaS1BUDhxSDJVcHIwNFFZTUNORW1IZGgyU0h4NS02QWxWRmhvbFpmLUVYRFNYbkJ0UmpIMHNtZ1Q0WG1nYmNaeVJCRjh1R2g3MTVzLUtlM1hOYTlkLThsUmxZQVg5bzRVU1RLQTY1NzBNMU9BMm8?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.thebrighterside.news&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "The Brighter Side of News",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Mj Banias",
+        "author": "By Mj Banias",
+        "article_link": "https://news.google.com./read/CBMiigFBVV95cUxOVi1udmEya1JENlFxaEtObzFUSTBDUnhZV2Q3WXJZa2x1RTFKQVNRcHhEVTJSQjBJMllEZWp3ZktCeVEwb1VUUlNIaDhEWlBCcldjM05hMV9nd2hUN3IwN0Y1VDJveE1lNHFqZWJCUjRMbW8wenlTV3VXR041VklzUk1yRW5CVjRLM0E?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://thedebrief.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "The Debrief",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - DNA Damage Sensor Offers Unprecedented View into Living Cells",
+      "author": "N/A",
+      "article_link": "https://news.google.com./read/CBMiXkFVX3lxTE5reVhzbzlJV3dWeWFPS2ktRVVKUThVc093TlNhWnVSR19kdTFHTktnNjdOdF9HVHRZTzNLN3kydjhMYnJsemp6S1ltWmJVMHJsc0U0cG1ZT0JSTV9qS3c?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iJ0NnNU5URGRxYW14WFNGRk5ja2htVFJDZkF4ampCU2dLTWdPTmhoQQ=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.azosensors.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "AZoSensors",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Tuncay Baubec, Xabier Vergara and Kristeli Eleftheriou",
+        "author": "By Tuncay Baubec, Xabier Vergara and Kristeli Eleftheriou",
+        "article_link": "https://news.google.com./read/CBMiX0FVX3lxTFB5czB6V1F4d3BocGRBMXNLQ0xlQmFLazNRT0tjME0tdDhIekZmVlVtRDlBd3VfOW1IdkZCQ3lPQnlwZ3dna29wVjh2Rm15TUtJdHVkdUFOUWRUYVpzRVow?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nature.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Nature",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Robert Egan",
+        "author": "By Robert Egan",
+        "article_link": "https://news.google.com./read/CBMiZkFVX3lxTE5DOG04cURVRFNJS2RpODB5YnRaRmlnRHNEUjlSelU3QTkyZ2tyQlJRLTFpOTZBNk1XaTVSTWJ1Y01QaUdMUU84bldnSzc0RkR2ZlNQZ0FqcVA2bDM4NlpiMUh2N3ZtUQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://phys.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "Phys.org",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMipgFBVV95cUxNZzl4WW45eUUxaE0tSDdQc2ZqYVVsbUpneFZ5dEIxcXVNV0w3R1pWVmdXeWlTTElFakZlTTFTUVJOc1Q0am9ac1FkV2x4VHBLRTRBWlF4R0F4aGFobjFsVEFoQjNKeHdKZTJ6NkJaYXByQzZSOTdKNTR6R0J1Q2NIdnU5QkhNM19uQlRCM0YwbC1YT2M1TjU0NXp5dGh1SXo5NldIRFdR?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.genengnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "GEN - Genetic Engineering and Biotechnology News",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Here's what triggered thousands of earthquakes that rocked Santorini",
+      "author": "By Mudit Dube",
+      "article_link": "https://news.google.com./read/CBMivAFBVV95cUxNUXVGRDVCbHlxc3lqWV9FSEx6ckhpU1VIc09OYnMzOWc5aC03NUIxVDZ5b0g5QUV1RXBfcVVHV0dHc1ZucmQ3TlJ4aklnNE1NR05JaldvN2poc0lHZzlTMzhEeVVnWlpCTW8teFpMV2tTR1A0R2dFckpoaENEWlN0X1FXZHo5NF9aempiOGRVYzhSa3ZSZklYOVcwQTUybG9EMXpnS1U4aElCc2wyTHRQMlQ0MFhaWFVWVGlvcA?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iI0NnNU9Oa3hSVG5NMk9ERk9jamc0VFJDZkF4ampCU2dLTWdB=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.newsbytesapp.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "NewsBytes",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Victoria Gill",
+        "author": "By Victoria Gill",
+        "article_link": "https://news.google.com./read/CBMiWkFVX3lxTE5tX3g2b0lSamhoRFBSVEhEbTBSR3ZFWFJrSWU2MTRoTWNhdmIwTEpqak00VEZaS3d2by1RVUtMaXRSOGRWWmZxakRLNEwyV3BaVFRIR0hDbVMxQQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "BBC",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "By Tasos Kokkinidis",
+        "author": "By Tasos Kokkinidis",
+        "article_link": "https://news.google.com./read/CBMiogFBVV95cUxNbzloaWF0d3FlNGNtbWlwV19JRHRPak82NEZqRVJoaEhadjY2VWpyMGJaSFdZVVlxWHlFdXdWVmE2SHBiUmZjbGlQSjVTakczQ2psTHBjMXNhNXZiTVRockVNb0JCakladGZzMWNWeHNkekhrb3hDZ25WQkRYTlg2VGxKcF93UzBmTWIxREpXYVlPSDA2ZkNjM1BrOVM1M1o3ZWc?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://greekreporter.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "GreekReporter.com",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMiXEFVX3lxTE9iU2o5SVpUby1TTWhQNEZRMXVLaF94X3lxdDF4em1tUXhuc1ZhZVVLU1dTdk9MRmtNb0F0amFKak8tNjdZYllYOXlmYkRLc0pleWtndnZQYWlvTE82?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.eurekalert.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "EurekAlert!",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  },
+  {
+    "primary_article": {
+      "headline": "More - Mysterious Giant Structures Hidden Deep Inside Earth May Reveal How Life Began",
+      "author": "By Ishwi Singh",
+      "article_link": "https://news.google.com./read/CBMiygFBVV95cUxPa29HMHpMUWx6YWlWQzUxd2lXTGJua0dHNl9TU1JaZFNxN19kZGNQNkJMbDJnZXcydVZtNlBnMWdzcjU5bUdIWVVlNmQ5Q0ZnNUFGVHJEZXpsSWliZFFKR2dNSzZUeUpoaVZTclNBVUUwZUhqQ0dBZldzZk9kX1pSdUtUUmJsVS1kUFgyR0pwcXMtVzFwZ0RsUVlGX2xZNjB5Rk9iNHA0Znh2dTFCSUxYM05rZ1NaVUFKdzdWMUthaEVSV29JUFlkQUVR0gHPAUFVX3lxTE10Zks5N2xBUDg2cE9CRGpjSnl3RGRwTGd5OGhQZkpCcjBhalc2dDJWLWREMEhEUkhfbU5zTzd3aDhPeHVFX1pOUUttWGlGWXR3ZjhvTGttMkpBQy01YWtoc0F6Y3Q2LTlvTVhSSUVlN2JsNnV5cDViVG5fQlQ0U1FLWDZQNXA5OGlnZDB3a1VxMU5NOHFoNU5pMWthNlFvUmZZZFBKTEpyQTlFaGNZa2VFREhRS2hRcmdKMEFaTjAwUENLMVE0M2JqS0NNdmlRZw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "featured_image": "/api/attachments/CC8iI0NnNUlSbEJxVGs5dFdsWmtXa05MVFJDZkF4ampCU2dLTWdB=-w280-h168-p-df",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://newsable.asianetnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "source_name": "Asianet Newsable",
+      "publish_date": "23-11-2025"
+    },
+    "related_articles": [
+      {
+        "headline": "By Michelle Starr",
+        "author": "By Michelle Starr",
+        "article_link": "https://news.google.com./read/CBMimwFBVV95cUxOeVd0ODlEZ0JUdXowVFB3VHh0NUtvZ1RIY21ZVWNDajVMZGJZMWhqMk5IVUpWaHFBUTlBYjR5Yy1fTV8zVEk4SFRsUklDamZ1bEtrM2RYU3l0UVJUaG5id0hYUUJHcnFGYWJoM2NHY2tzOUtMYTNxazBUT3g0eHUyc21BMF9mN1AwUUxyN0ZBcUhMSW9zeEdra245RQ?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.sciencealert.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "ScienceAlert",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMib0FVX3lxTE9fWTA1VjczMWhwbjZkX1pOcTlfc3VSbmQ2VHhMYzFGTG1UcTdEQUNneS15cTI3QVRHM2hHbWlqNnNGSXIwYmoxUmJyR1l1RmtRcUlWX2w4Qlpkd0ZOdWl4bU9Qd2ptdy1ZNlRHcExQbw?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.sciencedaily.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "ScienceDaily",
+        "publish_date": "23-11-2025"
+      },
+      {
+        "headline": "N/A",
+        "author": "N/A",
+        "article_link": "https://news.google.com./read/CBMinAFBVV95cUxPVE9vLVU1Nm1MeUJKbzBoaXJjcVp4SVBDQlE3X0EzeFZVVmJQVE8ydVFwN0FJRUNSbmd4Wk1fd2NyblVTY1pjOVlqTThwdmdUZHhhZzF2ZUxzS2RXTnRETENvREpxMXdzUXVrOWNyVUxTT1ZqYThJcHVpejNNSUtFTEc4M19SRDN0RGZlOXlmSlI1S09yeVdBUlZlaUo?hl=en-IN&gl=IN&ceid=IN%3Aen",
+        "source_logo": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.ssbcrack.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_name": "SSBCrack",
+        "publish_date": "23-11-2025"
+      }
+    ],
+    "total_related_articles": 3
+  }
+]
