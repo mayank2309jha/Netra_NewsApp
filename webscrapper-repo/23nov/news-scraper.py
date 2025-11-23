@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 from urllib.parse import urljoin
+import sys
 
 
 def get_headers():
@@ -231,7 +232,17 @@ def scrape_article(url: str):
 
 
 if __name__ == "__main__":
-    url = "https://www.hindustantimes.com/india-news/in-first-rally-since-karur-stampede-vijay-accuses-dmk-of-loot-dynasty-politics-101763882081990.html"
-    result = scrape_article(url)
+    # Check if URL is provided as command line argument
+    if len(sys.argv) > 1:
+        url = sys.argv[1]
+    else:
+        # If no argument, ask for input
+        url = input("Enter the news article URL: ").strip()
 
+    if not url:
+        print("Error: No URL provided!")
+        sys.exit(1)
+
+    print(f"\nScraping: {url}\n")
+    result = scrape_article(url)
     print(json.dumps(result, indent=4))
