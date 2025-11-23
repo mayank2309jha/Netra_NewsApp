@@ -1,0 +1,1 @@
+Beautiful Soup cannot execute JS and since we need to execute JS in order to fetch the actual image link on google news. I am abandoning all attempts in searching for the image link on google news landing page.
