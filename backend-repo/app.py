@@ -268,5 +268,30 @@ def get_categories():
 @app.route('/api/health', methods=['GET'])
 def health(): return jsonify({'status': 'healthy'}), 200
 
+@app.route('/api/stats/overview', methods=['GET'])
+def get_stats_overview():
+    try:
+        total_articles = Article.query.count()
+        total_votes = Vote.query.count()
+        total_users = User.query.count()
+
+        # Get category breakdown
+        category_stats = db.session.query(
+            Article.category,
+            func.count(Article.id).label('article_count')
+        ).group_by(Article.category).all()
+
+        return jsonify({
+            'total_articles': total_articles,
+            'total_votes': total_votes,
+            'total_users': total_users,
+            'category_stats': [
+                {'category': c, 'article_count': n} for c, n in category_stats
+            ]
+        }), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
