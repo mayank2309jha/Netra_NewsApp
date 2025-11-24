@@ -2,8 +2,8 @@
 
 import axios from 'axios';
 
-// Base configuration
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// Base configuration - Make sure this matches your backend URL
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 // Create axios instance
 const api = axios.create({
@@ -35,8 +35,11 @@ api.interceptors.response.use(
     if (error.response?.status === 401) {
       // Token expired or invalid - redirect to login
       localStorage.removeItem('access_token');
-      localStorage.removeItem('user');
-      window.location.href = '/login';
+      localStorage.removeItem('netra_user');
+      // Don't redirect if already on auth page
+      if (!window.location.pathname.includes('/auth')) {
+        window.location.href = '/auth';
+      }
     }
     return Promise.reject(error);
   }
@@ -49,7 +52,7 @@ export const authAPI = {
     const response = await api.post('/auth/register', { username, email, password });
     if (response.data.access_token) {
       localStorage.setItem('access_token', response.data.access_token);
-      localStorage.setItem('user', JSON.stringify(response.data.user));
+      localStorage.setItem('netra_user', JSON.stringify(response.data.user));
     }
     return response.data;
   },
@@ -58,20 +61,28 @@ export const authAPI = {
     const response = await api.post('/auth/login', { username, password });
     if (response.data.access_token) {
       localStorage.setItem('access_token', response.data.access_token);
-      localStorage.setItem('user', JSON.stringify(response.data.user));
+      localStorage.setItem('netra_user', JSON.stringify(response.data.user));
     }
     return response.data;
   },
 
   logout: () => {
     localStorage.removeItem('access_token');
-    localStorage.removeItem('user');
-    window.location.href = '/login';
+    localStorage.removeItem('netra_user');
+    window.location.href = '/auth';
   },
 
   getCurrentUser: async () => {
     const response = await api.get('/auth/me');
     return response.data.user;
+  },
+  
+  updateProfile: async (data) => {
+    const response = await api.put('/auth/profile', data);
+    if (response.data.user) {
+      localStorage.setItem('netra_user', JSON.stringify(response.data.user));
+    }
+    return response.data;
   },
 
   isAuthenticated: () => {
@@ -79,7 +90,7 @@ export const authAPI = {
   },
 
   getUser: () => {
-    const userStr = localStorage.getItem('user');
+    const userStr = localStorage.getItem('netra_user');
     return userStr ? JSON.parse(userStr) : null;
   },
 };
@@ -88,14 +99,22 @@ export const authAPI = {
 
 export const articlesAPI = {
   getArticles: async (params = {}) => {
-    // params can include: category, sort_by, page, per_page, search
+    // params can include: category, sort_by, page, per_page, search, sources, dateRange
     const response = await api.get('/articles', { params });
     return response.data;
   },
 
   getArticle: async (articleId) => {
     const response = await api.get(`/articles/${articleId}`);
-    return response.data.article;
+    
+    // Handle both { article: {...} } and direct article object
+    if (response.data.article) {
+      return response.data.article;
+    } else if (response.data.id) {
+      return response.data;
+    } else {
+      throw new Error('Unexpected response format from API');
+    }
   },
 
   getCategories: async () => {
@@ -116,6 +135,20 @@ export const votingAPI = {
     const response = await api.delete(`/articles/${articleId}/vote`);
     return response.data;
   },
+};
+
+// ==================== Comments ====================
+
+export const commentsAPI = {
+  getComments: async (articleId) => {
+    const response = await api.get(`/articles/${articleId}/comments`);
+    return response.data.comments;
+  },
+  
+  addComment: async (articleId, content) => {
+    const response = await api.post(`/articles/${articleId}/comments`, { content });
+    return response.data;
+  }
 };
 
 // ==================== Bookmarks ====================
