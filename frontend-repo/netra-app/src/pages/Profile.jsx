@@ -57,25 +57,12 @@ const Profile = () => {
         setUser(parsedUser);
         setEditedUser(parsedUser);
         setLoading(false);
-        
-        // Optionally fetch fresh data from backend in background
-        try {
-          const userData = await authAPI.getCurrentUser();
-          setUser(userData);
-          setEditedUser(userData);
-          // Update localStorage with fresh data
-          localStorage.setItem("netra_user", JSON.stringify(userData));
-        } catch (err) {
-          console.log('Background refresh failed:', err);
-          // Keep using localStorage data
-        }
-        return;
       } catch (e) {
         console.error('Failed to parse stored user:', e);
       }
     }
 
-    // If no stored user, fetch from API
+    // Always fetch fresh data from API
     try {
       const userData = await authAPI.getCurrentUser();
       setUser(userData);
@@ -86,7 +73,8 @@ const Profile = () => {
       // If token is invalid, redirect to auth
       if (err.response?.status === 401) {
         authAPI.logout();
-      } else {
+      } else if (!user) {
+        // Only show error if we don't have cached user data
         setError('Failed to load profile data');
       }
     } finally {
@@ -110,7 +98,7 @@ const Profile = () => {
     setEditedUser({ ...editedUser, [e.target.name]: e.target.value });
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (editedUser.username.length < 3) {
       setError("Username must be at least 3 characters long");
       return;
@@ -122,16 +110,27 @@ const Profile = () => {
       return;
     }
 
-    // Update local storage
-    localStorage.setItem("netra_user", JSON.stringify(editedUser));
+    try {
+      // Call API to update profile
+      const response = await authAPI.updateProfile({
+        username: editedUser.username,
+        email: editedUser.email
+      });
 
-    setUser(editedUser);
-    setIsEditing(false);
-    setSuccess("Profile updated successfully!");
-    setError("");
-
-    // Note: In production, you would call an API endpoint to update the user profile
-    // await api.put('/auth/profile', editedUser);
+      // Update local state with returned user data
+      setUser(response.user);
+      setEditedUser(response.user);
+      
+      // Update local storage
+      localStorage.setItem("netra_user", JSON.stringify(response.user));
+      
+      setIsEditing(false);
+      setSuccess("Profile updated successfully!");
+      setError("");
+    } catch (err) {
+      console.error("Update failed", err);
+      setError(err.response?.data?.error || "Failed to update profile");
+    }
   };
 
   const handleLogout = () => {
@@ -526,31 +525,6 @@ const Profile = () => {
                     </Box>
                   </Grid>
                 </Grid>
-
-                <Divider sx={{ my: 3 }} />
-
-                {/* Note about data source */}
-                <Box
-                  sx={{
-                    backgroundColor: '#f5f5f5',
-                    border: '1px solid #e0e0e0',
-                    borderRadius: 1,
-                    p: 2,
-                    mb: 3,
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontFamily: "'Inter', sans-serif",
-                      color: "#666",
-                    }}
-                  >
-                    <strong>Note:</strong> This information is fetched from the backend database. 
-                    When you edit and save your profile, the changes are stored locally. 
-                    In a production environment, profile updates would be sent to the backend through API calls.
-                  </Typography>
-                </Box>
 
                 <Divider sx={{ my: 3 }} />
 

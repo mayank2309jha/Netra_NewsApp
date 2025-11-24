@@ -64,7 +64,7 @@ const Filter = ({ onFilterChange }) => {
   ];
 
   const sources = [
-    'Times India',
+    'Times of India',
     'Reuters',
     'BBC',
     'CNN',

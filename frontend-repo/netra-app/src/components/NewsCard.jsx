@@ -1,269 +1,188 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import {
   Card,
-  CardMedia,
   CardContent,
-  CardActions,
+  CardMedia,
   Typography,
   Box,
-  Avatar,
   Chip,
-  Button,
+  IconButton,
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { useNavigate } from 'react-router-dom';
 
-const StyledCard = styled(Card)(({ theme }) => ({
-  height: '100%',
-  display: 'flex',
-  flexDirection: 'column',
-  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-  cursor: 'pointer',
-  '&:hover': {
-    transform: 'translateY(-8px)',
-    boxShadow: theme.shadows[12],
-    '& .card-image': {
-      transform: 'scale(1.05)',
-    },
-  },
-}));
+const NewsCard = ({ article }) => {
+  const navigate = useNavigate();
+  const [bookmarked, setBookmarked] = React.useState(false);
+  const [imageError, setImageError] = React.useState(false);
 
-const CardMediaStyled = styled(CardMedia)(({ theme }) => ({
-  height: 200,
-  overflow: 'hidden',
-  backgroundColor: theme.palette.grey[300],
-  '& img': {
-    transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-  },
-}));
+  // Debug log to see what article data we're receiving
+  React.useEffect(() => {
+    console.log('NewsCard received article:', article);
+  }, [article]);
 
-const CardContentStyled = styled(CardContent)(({ theme }) => ({
-  flexGrow: 1,
-  padding: theme.spacing(2),
-  paddingBottom: theme.spacing(1),
-}));
-
-const Headline = styled(Typography)(({ theme }) => ({
-  fontWeight: 700,
-  fontSize: '1.1rem',
-  lineHeight: 1.4,
-  marginBottom: theme.spacing(1.5),
-  color: theme.palette.text.primary,
-  display: '-webkit-box',
-  WebkitLineClamp: 3,
-  WebkitBoxOrient: 'vertical',
-  overflow: 'hidden',
-  '&:hover': {
-    color: theme.palette.primary.main,
-  },
-}));
-
-const SourceContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  gap: theme.spacing(1),
-  marginBottom: theme.spacing(1.5),
-  paddingBottom: theme.spacing(1.5),
-  borderBottom: `1px solid ${theme.palette.divider}`,
-}));
-
-const SourceLogo = styled(Avatar)(({ theme }) => ({
-  width: 32,
-  height: 32,
-  backgroundColor: theme.palette.primary.light,
-  fontSize: '0.85rem',
-  fontWeight: 'bold',
-}));
-
-const SourceInfo = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  gap: theme.spacing(0.25),
-  flex: 1,
-}));
-
-const SourceName = styled(Typography)(({ theme }) => ({
-  fontSize: '0.85rem',
-  fontWeight: 600,
-  color: theme.palette.text.primary,
-}));
-
-const AuthorName = styled(Typography)(({ theme }) => ({
-  fontSize: '0.75rem',
-  color: theme.palette.text.secondary,
-}));
-
-const PublishDate = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  gap: theme.spacing(0.5),
-  fontSize: '0.75rem',
-  color: theme.palette.text.secondary,
-}));
-
-const CardActionsStyled = styled(CardActions)(({ theme }) => ({
-  padding: theme.spacing(2),
-  paddingTop: theme.spacing(1),
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  gap: theme.spacing(1),
-}));
-
-const ReadMoreButton = styled(Button)(({ theme }) => ({
-  textTransform: 'none',
-  fontWeight: 600,
-  fontSize: '0.9rem',
-  padding: theme.spacing(0.75, 1.5),
-  backgroundColor: theme.palette.primary.main,
-  color: '#ffffff',
-  borderRadius: theme.spacing(0.5),
-  transition: 'all 0.2s ease',
-  '&:hover': {
-    backgroundColor: theme.palette.primary.dark,
-    transform: 'translateX(2px)',
-  },
-  display: 'flex',
-  alignItems: 'center',
-  gap: theme.spacing(0.5),
-}));
-
-const NewsCard = ({ 
-  headline, 
-  image, 
-  author, 
-  sourceName, 
-  sourceLogo, 
-  publishDate, 
-  category,
-  id,  // ← ADD: Article ID
-  onClick,
-  onReadMore 
-}) => {
-  const navigate = useNavigate();  // ← ADD: Initialize navigation
-
-  const getCategoryColor = (cat) => {
-    const colors = {
-      India: '#ff5722',
-      World: '#2196f3',
-      Business: '#4caf50',
-      Technology: '#9c27b0',
-      Sports: '#ff9800',
-      Science: '#00bcd4',
-      Entertainment: '#e91e63',
-      Local: '#ffb300',
-    };
-    return colors[cat] || '#d32f2f';
+  const handleCardClick = () => {
+    navigate(`/article/${article.id}`);
   };
 
-  const formatDate = (date) => {
-    if (!date) return 'Recently';
-    const d = new Date(date);
-    const today = new Date();
-    const yesterday = new Date(today);
-    yesterday.setDate(yesterday.getDate() - 1);
-
-    if (d.toDateString() === today.toDateString()) {
-      return `${d.getHours()}h ago`;
-    } else if (d.toDateString() === yesterday.toDateString()) {
-      return 'Yesterday';
-    } else {
-      return d.toLocaleDateString('en-IN', { month: 'short', day: 'numeric' });
-    }
-  };
-
-  const getSourceInitials = (name) => {
-    if (!name) return '?';
-    return name
-      .split(' ')
-      .map((word) => word[0])
-      .join('')
-      .toUpperCase()
-      .slice(0, 2);
-  };
-
-  // ← UPDATED: Handle Read More with navigation
-  const handleReadMore = (e) => {
+  const handleBookmarkClick = (e) => {
     e.stopPropagation();
-    
-    // Navigate to article detail page with ID
-    navigate(`/article/${id}`);
-    
-    // Also call parent callback if provided (optional)
-    onReadMore?.();
+    setBookmarked(!bookmarked);
   };
+
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
+  const formatDate = (dateString) => {
+    if (!dateString) return 'Recently';
+    return dateString;
+  };
+
+  // Safety check for article object
+  if (!article) {
+    console.error('NewsCard: No article data provided');
+    return null;
+  }
 
   return (
-    <StyledCard onClick={onClick} elevation={2}>
-      {/* Card Image */}
-      <CardMediaStyled
-        className="card-image"
-        image={image || 'https://via.placeholder.com/400x200?text=News+Image'}
-        title={headline}
-        component="img"
-      />
-
-      {/* Card Content */}
-      <CardContentStyled>
-        {/* Headline */}
-        <Headline variant="h6">
-          {headline || 'Untitled Article'}
-        </Headline>
-
-        {/* Source Information */}
-        <SourceContainer>
-          <SourceLogo>
-            {getSourceInitials(sourceName)}
-          </SourceLogo>
-          <SourceInfo>
-            <SourceName>{sourceName}</SourceName>
-            <AuthorName>by {author || 'Unknown'}</AuthorName>
-          </SourceInfo>
-        </SourceContainer>
-
-        {/* Publish Date and Category */}
+    <Card
+      elevation={0}
+      sx={{
+        border: '1px solid #e0e0e0',
+        borderRadius: 2,
+        cursor: 'pointer',
+        transition: 'all 0.2s',
+        '&:hover': {
+          boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+          transform: 'translateY(-2px)',
+        },
+      }}
+      onClick={handleCardClick}
+    >
+      {article.featured_image && !imageError ? (
+        <CardMedia
+          component="img"
+          height="200"
+          image={article.featured_image}
+          alt={article.headline || 'Article image'}
+          onError={handleImageError}
+          sx={{ objectFit: 'cover', backgroundColor: '#f0f0f0' }}
+        />
+      ) : (
         <Box
           sx={{
+            height: 200,
+            backgroundColor: '#e0e0e0',
             display: 'flex',
-            justifyContent: 'space-between',
             alignItems: 'center',
-            gap: 1,
+            justifyContent: 'center',
           }}
         >
-          <PublishDate>
-            <AccessTimeIcon sx={{ fontSize: '0.8rem' }} />
-            {formatDate(publishDate)}
-          </PublishDate>
-          {category && (
+          <Typography variant="body2" color="textSecondary">
+            No Image Available
+          </Typography>
+        </Box>
+      )}
+      <CardContent>
+        {/* Category and Bookmark */}
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
+          {article.category && (
             <Chip
-              label={category}
+              label={article.category.charAt(0).toUpperCase() + article.category.slice(1)}
               size="small"
-              sx={{
-                backgroundColor: getCategoryColor(category),
-                color: '#ffffff',
-                fontWeight: 'bold',
-                fontSize: '0.7rem',
-                height: '24px',
-              }}
+              color="primary"
+              sx={{ fontFamily: "'Inter', sans-serif" }}
             />
           )}
+          <IconButton
+            size="small"
+            onClick={handleBookmarkClick}
+            sx={{ ml: 'auto' }}
+          >
+            {bookmarked ? <BookmarkIcon color="primary" /> : <BookmarkBorderIcon />}
+          </IconButton>
         </Box>
-      </CardContentStyled>
 
-      {/* Card Actions - Read More Button */}
-      <CardActionsStyled>
-        <Box sx={{ flex: 1 }} />
-        <ReadMoreButton
-          variant="contained"
-          endIcon={<ArrowForwardIcon sx={{ fontSize: '1rem' }} />}
-          onClick={handleReadMore}
+        {/* Headline */}
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: 600,
+            fontFamily: "'Inter', sans-serif",
+            mb: 1,
+            lineHeight: 1.4,
+            display: '-webkit-box',
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+          }}
         >
-          Read More
-        </ReadMoreButton>
-      </CardActionsStyled>
-    </StyledCard>
+          {article.headline || 'Untitled Article'}
+        </Typography>
+
+        {/* Author */}
+        {article.author && (
+          <Typography
+            variant="body2"
+            sx={{
+              color: '#666',
+              fontFamily: "'Inter', sans-serif",
+              mb: 1,
+              fontSize: '0.875rem',
+            }}
+          >
+            by {article.author}
+          </Typography>
+        )}
+
+        {/* Source and Date */}
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
+          {article.source_logo && !imageError && (
+            <img
+              src={article.source_logo}
+              alt={article.source_name}
+              style={{ width: 20, height: 20, objectFit: 'contain' }}
+              onError={(e) => e.target.style.display = 'none'}
+            />
+          )}
+          <Typography variant="caption" sx={{ color: '#666', fontFamily: "'Inter', sans-serif" }}>
+            {article.source_name || 'Unknown Source'}
+          </Typography>
+          <Typography variant="caption" sx={{ color: '#999' }}>
+            •
+          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+            <AccessTimeIcon sx={{ fontSize: 14, color: '#999' }} />
+            <Typography variant="caption" sx={{ color: '#999', fontFamily: "'Inter', sans-serif" }}>
+              {formatDate(article.publish_date)}
+            </Typography>
+          </Box>
+        </Box>
+
+        {/* Vote Stats */}
+        {article.vote_stats && (
+          <Box sx={{ display: 'flex', gap: 2, pt: 1, borderTop: '1px solid #f0f0f0' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+              <ThumbUpIcon sx={{ fontSize: 16, color: '#2e7d32' }} />
+              <Typography variant="caption" sx={{ color: '#666', fontFamily: "'Inter', sans-serif" }}>
+                {article.vote_stats.not_biased_percentage || 0}% Not Biased
+              </Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+              <ThumbDownIcon sx={{ fontSize: 16, color: '#d32f2f' }} />
+              <Typography variant="caption" sx={{ color: '#666', fontFamily: "'Inter', sans-serif" }}>
+                {article.vote_stats.biased_percentage || 0}% Biased
+              </Typography>
+            </Box>
+          </Box>
+        )}
+      </CardContent>
+    </Card>
   );
 };
 
