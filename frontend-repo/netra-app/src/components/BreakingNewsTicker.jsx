@@ -8,6 +8,7 @@ import {
 } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import { useNavigate } from 'react-router-dom';
 
 // Keyframe animation for ticker scroll
 const scroll = keyframes`
@@ -95,6 +96,7 @@ const NewsText = styled(Typography)(({ theme }) => ({
 }));
 
 const BreakingNewsTicker = () => {
+  const navigate = useNavigate()
   const [news, setNews] = useState([
     {
       id: 1,
@@ -151,6 +153,10 @@ const BreakingNewsTicker = () => {
     return colors[category] || '#d32f2f';
   };
 
+  const handleNews = () => {
+    navigate("/article/:id");
+  }
+
   // Duplicate news items for seamless scrolling
   const duplicatedNews = [...news, ...news, ...news];
 
@@ -158,7 +164,7 @@ const BreakingNewsTicker = () => {
     <TickerContainer elevation={3}>
       <TickerLabel>
         <DotIcon />
-        <span>BREAKING NEWS</span>
+        <span>TOP NEWS</span>
       </TickerLabel>
 
       <Box
@@ -174,7 +180,7 @@ const BreakingNewsTicker = () => {
           {duplicatedNews.map((item, index) => (
             <NewsItem key={`${item.id}-${index}`}>
               <NewsDot />
-              <NewsText>{item.title}</NewsText>
+              <NewsText onClick={handleNews}>{item.title}</NewsText>
               <Chip
                 label={item.category}
                 size="small"

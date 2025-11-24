@@ -82,6 +82,10 @@ const Navbar = () => {
     handleClose();
   };
 
+  const handleHomeClick = () => {
+    navigate("/");
+  }
+
   return (
     <AppBar
       position="static"
@@ -103,6 +107,7 @@ const Navbar = () => {
             color: "#080808ff",
             textDecoration: "none",
           }}
+          onClick={handleHomeClick}
         >
           N👁TRA
         </Typography>
