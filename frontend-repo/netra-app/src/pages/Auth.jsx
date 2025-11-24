@@ -20,6 +20,7 @@ import {
   Email,
   Lock,
 } from "@mui/icons-material";
+import { authAPI } from '../service/api';
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -57,96 +58,21 @@ const Auth = () => {
     setError("");
   };
 
-  const simulateLogin = async (credentials) => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        const storedUsers = JSON.parse(
-          localStorage.getItem("netra_users") || "[]"
-        );
-        const user = storedUsers.find(
-          (u) =>
-            u.username === credentials.username &&
-            u.password === credentials.password
-        );
-
-        if (user) {
-          const token = btoa(
-            JSON.stringify({ userId: user.id, username: user.username })
-          );
-          resolve({
-            access_token: token,
-            user: {
-              id: user.id,
-              username: user.username,
-              email: user.email,
-            },
-          });
-        } else {
-          reject({ message: "Invalid username or password" });
-        }
-      }, 1000);
-    });
-  };
-
-  const simulateRegister = async (userData) => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        const storedUsers = JSON.parse(
-          localStorage.getItem("netra_users") || "[]"
-        );
-
-        const userExists = storedUsers.find(
-          (u) => u.username === userData.username || u.email === userData.email
-        );
-
-        if (userExists) {
-          reject({ message: "Username or email already exists" });
-          return;
-        }
-
-        const newUser = {
-          id: Date.now(),
-          username: userData.username,
-          email: userData.email,
-          password: userData.password,
-          createdAt: new Date().toISOString(),
-        };
-
-        storedUsers.push(newUser);
-        localStorage.setItem("netra_users", JSON.stringify(storedUsers));
-
-        const token = btoa(
-          JSON.stringify({ userId: newUser.id, username: newUser.username })
-        );
-        resolve({
-          access_token: token,
-          user: {
-            id: newUser.id,
-            username: newUser.username,
-            email: newUser.email,
-          },
-        });
-      }, 1000);
-    });
-  };
-
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
     setLoading(true);
 
     try {
-      const response = await simulateLogin(loginData);
-
-      localStorage.setItem("access_token", response.access_token);
-      localStorage.setItem("netra_user", JSON.stringify(response.user));
-
+      await authAPI.login(loginData.username, loginData.password);
+      
       setSuccess("Login successful! Redirecting...");
       setTimeout(() => {
         navigate("/");
       }, 1500);
     } catch (err) {
-      setError(err.message || "Login failed. Please try again.");
+      const errorMessage = err.response?.data?.error || "Login failed. Please try again.";
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -156,6 +82,7 @@ const Auth = () => {
     e.preventDefault();
     setError("");
 
+    // Validation
     if (registerData.password !== registerData.confirmPassword) {
       setError("Passwords do not match");
       return;
@@ -180,21 +107,19 @@ const Auth = () => {
     setLoading(true);
 
     try {
-      const response = await simulateRegister({
-        username: registerData.username,
-        email: registerData.email,
-        password: registerData.password,
-      });
-
-      localStorage.setItem("access_token", response.access_token);
-      localStorage.setItem("netra_user", JSON.stringify(response.user));
+      await authAPI.register(
+        registerData.username,
+        registerData.email,
+        registerData.password
+      );
 
       setSuccess("Registration successful! Redirecting...");
       setTimeout(() => {
         navigate("/");
       }, 1500);
     } catch (err) {
-      setError(err.message || "Registration failed. Please try again.");
+      const errorMessage = err.response?.data?.error || "Registration failed. Please try again.";
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
