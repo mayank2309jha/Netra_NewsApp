@@ -11,6 +11,7 @@ import {
   Grid,
   TextField,
   Alert,
+  CircularProgress,
 } from "@mui/material";
 import {
   Person,
@@ -19,7 +20,11 @@ import {
   Edit,
   Save,
   Cancel,
+  Logout,
 } from "@mui/icons-material";
+import { authAPI } from '../service/api';
+import SearchNavbar from '../components/SearchNavbar';
+import Navbar from '../components/Navbar';
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -29,20 +34,53 @@ const Profile = () => {
   const [editedUser, setEditedUser] = useState(null);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem("access_token");
-    const storedUser = localStorage.getItem("netra_user");
+    fetchUserData();
+  }, []);
 
-    if (!token || !storedUser) {
-      navigate("/auth");
+  const fetchUserData = async () => {
+    const token = localStorage.getItem("access_token");
+    
+    if (!token) {
+      setLoading(false);
+      setTimeout(() => navigate("/auth"), 100);
       return;
     }
 
-    const userData = JSON.parse(storedUser);
-    setUser(userData);
-    setEditedUser(userData);
-  }, [navigate]);
+    // First try to get user from localStorage
+    const storedUser = localStorage.getItem("netra_user");
+    if (storedUser) {
+      try {
+        const parsedUser = JSON.parse(storedUser);
+        setUser(parsedUser);
+        setEditedUser(parsedUser);
+        setLoading(false);
+      } catch (e) {
+        console.error('Failed to parse stored user:', e);
+      }
+    }
+
+    // Always fetch fresh data from API
+    try {
+      const userData = await authAPI.getCurrentUser();
+      setUser(userData);
+      setEditedUser(userData);
+      localStorage.setItem("netra_user", JSON.stringify(userData));
+    } catch (err) {
+      console.error('Error fetching user data:', err);
+      // If token is invalid, redirect to auth
+      if (err.response?.status === 401) {
+        authAPI.logout();
+      } else if (!user) {
+        // Only show error if we don't have cached user data
+        setError('Failed to load profile data');
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleEdit = () => {
     setIsEditing(true);
@@ -60,7 +98,7 @@ const Profile = () => {
     setEditedUser({ ...editedUser, [e.target.name]: e.target.value });
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (editedUser.username.length < 3) {
       setError("Username must be at least 3 characters long");
       return;
@@ -72,19 +110,31 @@ const Profile = () => {
       return;
     }
 
-    const storedUsers = JSON.parse(localStorage.getItem("netra_users") || "[]");
-    const userIndex = storedUsers.findIndex((u) => u.id === user.id);
+    try {
+      // Call API to update profile
+      const response = await authAPI.updateProfile({
+        username: editedUser.username,
+        email: editedUser.email
+      });
 
-    if (userIndex !== -1) {
-      storedUsers[userIndex] = { ...storedUsers[userIndex], ...editedUser };
-      localStorage.setItem("netra_users", JSON.stringify(storedUsers));
-      localStorage.setItem("netra_user", JSON.stringify(editedUser));
+      // Update local state with returned user data
+      setUser(response.user);
+      setEditedUser(response.user);
+      
+      // Update local storage
+      localStorage.setItem("netra_user", JSON.stringify(response.user));
+      
+      setIsEditing(false);
+      setSuccess("Profile updated successfully!");
+      setError("");
+    } catch (err) {
+      console.error("Update failed", err);
+      setError(err.response?.data?.error || "Failed to update profile");
     }
+  };
 
-    setUser(editedUser);
-    setIsEditing(false);
-    setSuccess("Profile updated successfully!");
-    setError("");
+  const handleLogout = () => {
+    authAPI.logout();
   };
 
   const formatDate = (dateString) => {
@@ -101,18 +151,57 @@ const Profile = () => {
     return username ? username.charAt(0).toUpperCase() : "U";
   };
 
+  if (loading) {
+    return (
+      <>
+        <SearchNavbar />
+        <Navbar />
+        <Box
+          sx={{
+            minHeight: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#f5f5f5",
+          }}
+        >
+          <CircularProgress />
+        </Box>
+      </>
+    );
+  }
+
   if (!user) {
-    return null;
+    return (
+      <>
+        <SearchNavbar />
+        <Navbar />
+        <Box
+          sx={{
+            minHeight: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#f5f5f5",
+          }}
+        >
+          <Alert severity="info">Redirecting to login...</Alert>
+        </Box>
+      </>
+    );
   }
 
   return (
-    <Box
-      sx={{
-        minHeight: "100vh",
-        backgroundColor: "#f5f5f5",
-        py: 4,
-      }}
-    >
+    <>
+      <SearchNavbar />
+      <Navbar />
+      <Box
+        sx={{
+          minHeight: "100vh",
+          backgroundColor: "#f5f5f5",
+          py: 4,
+        }}
+      >
       <Container maxWidth="md">
         <Paper
           elevation={0}
@@ -221,7 +310,7 @@ const Profile = () => {
                           fontFamily: "'Inter', sans-serif",
                         }}
                       >
-                        Member since {formatDate(user.createdAt)}
+                        Member since {formatDate(user.created_at)}
                       </Typography>
                     </Box>
                   </Box>
@@ -390,7 +479,7 @@ const Profile = () => {
                             fontWeight: 500,
                           }}
                         >
-                          {formatDate(user.createdAt)}
+                          {formatDate(user.created_at)}
                         </Typography>
                       </Box>
                     </Box>
@@ -439,28 +528,20 @@ const Profile = () => {
 
                 <Divider sx={{ my: 3 }} />
 
-                <Box
+                <Button
+                  fullWidth
+                  variant="outlined"
+                  color="error"
+                  startIcon={<Logout />}
+                  onClick={handleLogout}
                   sx={{
-                    backgroundColor: "#f9f9f9",
-                    p: 2,
-                    borderRadius: 1,
-                    border: "1px solid #e0e0e0",
+                    textTransform: "none",
+                    fontFamily: "'Inter', sans-serif",
+                    fontWeight: 600,
                   }}
                 >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "#666",
-                      fontFamily: "'Inter', sans-serif",
-                      lineHeight: 1.6,
-                    }}
-                  >
-                    <strong>Note:</strong> This is simulated data stored in your
-                    browser's localStorage. When connected to the database, this
-                    information will be fetched from the backend and can be
-                    updated through API calls.
-                  </Typography>
-                </Box>
+                  Logout
+                </Button>
               </Box>
             )}
 
@@ -497,6 +578,7 @@ const Profile = () => {
         </Paper>
       </Container>
     </Box>
+    </>
   );
 };
 
