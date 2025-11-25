@@ -30,10 +30,6 @@ const FilterTitle = styled(Typography)(({ theme }) => ({
 
 const FilterSection = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(2),
-
-  '&:last-of-type': {
-    marginBottom: 0,
-  },
 }));
 
 const SectionTitle = styled(Typography)(({ theme }) => ({
@@ -47,21 +43,9 @@ const SectionTitle = styled(Typography)(({ theme }) => ({
 
 const Filter = ({ onFilterChange }) => {
   const [selectedFilters, setSelectedFilters] = useState({
-    categories: [],
     sources: [],
     dateRange: 'all',
   });
-
-  const categories = [
-    'India',
-    'World',
-    'Business',
-    'Technology',
-    'Sports',
-    'Science',
-    'Entertainment',
-    'Local',
-  ];
 
   const sources = [
     'Times of India',
@@ -78,16 +62,6 @@ const Filter = ({ onFilterChange }) => {
     { value: 'month', label: 'This Month' },
     { value: 'all', label: 'All Time' },
   ];
-
-  const handleCategoryChange = (category) => {
-    const updated = selectedFilters.categories.includes(category)
-      ? selectedFilters.categories.filter((c) => c !== category)
-      : [...selectedFilters.categories, category];
-
-    const newFilters = { ...selectedFilters, categories: updated };
-    setSelectedFilters(newFilters);
-    onFilterChange?.(newFilters);
-  };
 
   const handleSourceChange = (source) => {
     const updated = selectedFilters.sources.includes(source)
@@ -107,7 +81,6 @@ const Filter = ({ onFilterChange }) => {
 
   const handleReset = () => {
     const resetFilters = {
-      categories: [],
       sources: [],
       dateRange: 'all',
     };
@@ -118,34 +91,6 @@ const Filter = ({ onFilterChange }) => {
   return (
     <FilterContainer elevation={0}>
       <FilterTitle variant="h6">Filters</FilterTitle>
-
-      {/* Categories Section */}
-      <FilterSection>
-        <SectionTitle variant="caption">Categories</SectionTitle>
-        <FormGroup sx={{ gap: 0.5 }}>
-          {categories.map((category) => (
-            <FormControlLabel
-              key={category}
-              control={
-                <Checkbox
-                  size="small"
-                  checked={selectedFilters.categories.includes(category)}
-                  onChange={() => handleCategoryChange(category)}
-                  sx={{
-                    '&.Mui-checked': {
-                      color: '#1976d2',
-                    },
-                  }}
-                />
-              }
-              label={<Typography sx={{ fontSize: '0.875rem', color: '#333' }}>{category}</Typography>}
-              sx={{ margin: 0 }}
-            />
-          ))}
-        </FormGroup>
-      </FilterSection>
-
-      <Divider sx={{ my: 2 }} />
 
       {/* Date Range Section */}
       <FilterSection>
@@ -160,7 +105,7 @@ const Filter = ({ onFilterChange }) => {
               key={range.value}
               value={range.value}
               control={
-                <Radio 
+                <Radio
                   size="small"
                   sx={{
                     '&.Mui-checked': {
@@ -211,7 +156,7 @@ const Filter = ({ onFilterChange }) => {
           size="small"
           fullWidth
           onClick={handleReset}
-          sx={{ 
+          sx={{
             color: '#1976d2',
             borderColor: '#1976d2',
             textTransform: 'none',
