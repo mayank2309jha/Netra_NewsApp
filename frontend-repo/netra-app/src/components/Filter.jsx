@@ -49,11 +49,14 @@ const Filter = ({ onFilterChange }) => {
 
   const sources = [
     'Times of India',
-    'Reuters',
-    'BBC',
-    'CNN',
-    'Tech Crunch',
-    'The Guardian',
+    'India Today',
+    'Mint',
+    'The Hindu',
+    'News18',
+    'Moneycontrol',
+    'The Economic Times',
+    'Business Standard',
+    'Hindustan Times'
   ];
 
   const dateRanges = [
