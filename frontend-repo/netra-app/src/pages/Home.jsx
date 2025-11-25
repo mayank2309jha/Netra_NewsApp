@@ -25,7 +25,7 @@ const theme = createTheme({
 function Home(){
   const navigate = useNavigate();
   const [filters, setFilters] = useState({
-    categories: [],
+    categories: ["india"],
     sources: [],
     dateRange: 'all',
   });
@@ -108,7 +108,7 @@ function Home(){
           {/* LEFT SIDEBAR */}
           <Box sx={{ width: '320px', flexShrink: 0, position: 'sticky', top: 20, height: 'fit-content' }}>
             <Filter onFilterChange={handleFilterChange} />
-            <YouTubeRecommendation />
+            {/*<YouTubeRecommendation />*/}
           </Box>
 
           {/* RIGHT SECTION */}

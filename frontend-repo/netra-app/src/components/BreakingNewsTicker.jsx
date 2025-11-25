@@ -61,7 +61,7 @@ const DotIcon = styled(FiberManualRecordIcon)(({ theme }) => ({
 
 const TickerContent = styled(Box)(({ theme }) => ({
   display: 'flex',
-  animation: `${scroll} 90s linear infinite`,
+  animation: `${scroll} 50s linear infinite`,
   '&:hover': {
     animationPlayState: 'paused',
   },

@@ -113,7 +113,7 @@ const Navbar = () => {
         </Typography>
 
         {/* Search Bar */}
-        <Search>
+        {/* <Search>
           <SearchIconWrapper>
             <SearchIcon />
           </SearchIconWrapper>
@@ -121,7 +121,7 @@ const Navbar = () => {
             placeholder="Search articles..."
             inputProps={{ "aria-label": "search" }}
           />
-        </Search>
+        </Search> */}
 
         {/* User Icon */}
         <Box sx={{ marginLeft: "auto" }}>
