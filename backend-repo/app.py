@@ -160,7 +160,7 @@ def get_article(article_id):
         try:
             from flask_jwt_extended import verify_jwt_in_request, get_jwt_identity
             verify_jwt_in_request(optional=True)
-            user_id = get_jwt_identity()
+            user_id = int(get_jwt_identity()) if get_jwt_identity() else None
         except:
             pass
             
@@ -216,7 +216,8 @@ def get_articles():
 @jwt_required()
 def vote_article(article_id):
     try:
-        user_id = get_jwt_identity()
+        user_id = int(get_jwt_identity())
+        #user_id = 1
         data = request.get_json()
         article = Article.query.get(article_id)
         if not article: return jsonify({'error': 'Not found'}), 404
@@ -239,7 +240,7 @@ def login():
         data = request.get_json()
         user = User.query.filter_by(username=data.get('username')).first()
         if user and user.check_password(data.get('password')):
-            return jsonify({'access_token': create_access_token(identity=user.id), 'user': user.to_dict()}), 200
+            return jsonify({'access_token': create_access_token(identity=str(user.id)), 'user': user.to_dict()}), 200
         return jsonify({'error': 'Invalid credentials'}), 401
     except Exception as e: return jsonify({'error': str(e)}), 500
 
@@ -252,13 +253,13 @@ def register():
         user.set_password(data['password'])
         db.session.add(user)
         db.session.commit()
-        return jsonify({'access_token': create_access_token(identity=user.id), 'user': user.to_dict()}), 201
+        return jsonify({'access_token': create_access_token(identity=str(user.id)), 'user': user.to_dict()}), 201
     except Exception as e: return jsonify({'error': str(e)}), 500
 
 @app.route('/api/auth/me', methods=['GET'])
 @jwt_required()
 def get_me():
-    return jsonify({'user': User.query.get(get_jwt_identity()).to_dict()}), 200
+    return jsonify({'user': User.query.get(int(get_jwt_identity())).to_dict()}), 200
 
 @app.route('/api/categories', methods=['GET'])
 def get_categories():
