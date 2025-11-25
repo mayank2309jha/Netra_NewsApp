@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-// Base configuration - Make sure this matches your backend URL
+// Base configuration
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 // Create axios instance
@@ -11,7 +11,7 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 10000,
+  timeout: 15000,
 });
 
 // Request interceptor to add auth token
@@ -33,10 +33,8 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      // Token expired or invalid - redirect to login
       localStorage.removeItem('access_token');
       localStorage.removeItem('netra_user');
-      // Don't redirect if already on auth page
       if (!window.location.pathname.includes('/auth')) {
         window.location.href = '/auth';
       }
@@ -99,15 +97,12 @@ export const authAPI = {
 
 export const articlesAPI = {
   getArticles: async (params = {}) => {
-    // params can include: category, sort_by, page, per_page, search, sources, dateRange
     const response = await api.get('/articles', { params });
     return response.data;
   },
 
   getArticle: async (articleId) => {
     const response = await api.get(`/articles/${articleId}`);
-    
-    // Handle both { article: {...} } and direct article object
     if (response.data.article) {
       return response.data.article;
     } else if (response.data.id) {
@@ -155,7 +150,6 @@ export const commentsAPI = {
 
 export const bookmarksAPI = {
   getBookmarks: async (params = {}) => {
-    // params can include: page, per_page
     const response = await api.get('/bookmarks', { params });
     return response.data;
   },
@@ -183,9 +177,60 @@ export const userAPI = {
 // ==================== Statistics ====================
 
 export const statsAPI = {
+  // Main overview stats
   getOverview: async () => {
     const response = await api.get('/stats/overview');
     return response.data;
+  },
+
+  // Voting patterns stats
+  getVotingStats: async () => {
+    const response = await api.get('/stats/voting');
+    return response.data;
+  },
+
+  // Bookmark patterns stats
+  getBookmarkStats: async () => {
+    const response = await api.get('/stats/bookmarks');
+    return response.data;
+  },
+
+  // News source/agency stats
+  getSourceStats: async () => {
+    const response = await api.get('/stats/sources');
+    return response.data;
+  },
+
+  // Category stats
+  getCategoryStats: async () => {
+    const response = await api.get('/stats/categories');
+    return response.data;
+  },
+
+  // Author stats
+  getAuthorStats: async () => {
+    const response = await api.get('/stats/authors');
+    return response.data;
+  },
+
+  // Engagement stats
+  getEngagementStats: async () => {
+    const response = await api.get('/stats/engagement');
+    return response.data;
+  },
+
+  // Fetch all stats at once (for dashboard)
+  getAllStats: async () => {
+    const [overview, voting, bookmarks, sources, categories, authors, engagement] = await Promise.all([
+      statsAPI.getOverview(),
+      statsAPI.getVotingStats(),
+      statsAPI.getBookmarkStats(),
+      statsAPI.getSourceStats(),
+      statsAPI.getCategoryStats(),
+      statsAPI.getAuthorStats(),
+      statsAPI.getEngagementStats(),
+    ]);
+    return { overview, voting, bookmarks, sources, categories, authors, engagement };
   },
 };
 
