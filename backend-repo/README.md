@@ -64,6 +64,16 @@ python app.py
 
 The API will be available at: `http://localhost:5000`
 
+To populate the database with dummy data run: 
+```bash
+python populate_dummy_data.py
+```
+
+To periodically populate the databse with new articles run:
+```bash
+python scheduler.py
+```
+
 ## Database Schema
 
 ### Tables Overview
