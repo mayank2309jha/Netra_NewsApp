@@ -1,34 +1,15 @@
 # NETRA News Platform - Backend Setup Guide
 
-## 🎯 Project Overview
+## Project Overview
 
 NETRA is a news aggregation platform that allows users to vote on whether news articles are biased or not. The backend is built with Flask and PostgreSQL, featuring JWT authentication, voting system, bookmarks, and comprehensive article management.
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - PostgreSQL 12 or higher
 - pip (Python package manager)
-
-## 🚀 Quick Setup
-
-### 1. Install PostgreSQL
-
-**Ubuntu/Debian:**
-```bash
-sudo apt update
-sudo apt install postgresql postgresql-contrib
-sudo systemctl start postgresql
-```
-
-**macOS:**
-```bash
-brew install postgresql
-brew services start postgresql
-```
-
-**Windows:**
-Download and install from: https://www.postgresql.org/download/windows/
+- Check requirements.txt
 
 ### 2. Create Database
 
@@ -62,23 +43,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment Variables
-
-```bash
-# Copy example environment file
-cp .env.example .env
-
-# Edit .env file with your configuration
-nano .env
-```
-
-Update the following in `.env`:
-```
-DATABASE_URL=postgresql://netra_user:your_password@localhost:5432/netra_news
-JWT_SECRET_KEY=generate-a-strong-random-key-here
-```
-
-### 5. Initialize Database and Load Data
+### 4. Initialize Database and Load Data
 
 ```bash
 # Run the data loading script
@@ -95,15 +60,11 @@ This will:
 ```bash
 # Development mode
 python app.py
-
-# Production mode (use gunicorn)
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
 ```
 
 The API will be available at: `http://localhost:5000`
 
-## 📊 Database Schema
+## Database Schema
 
 ### Tables Overview
 
@@ -160,7 +121,7 @@ users ──┬─< votes >── articles
 articles ──< related_articles
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication
 
@@ -209,71 +170,6 @@ Response: {
 }
 ```
 
-### Articles
-
-#### Get Articles (with filtering and pagination)
-```
-GET /api/articles?category=india&sort_by=recent&page=1&per_page=20&search=keyword
-Authorization: Bearer <access_token> (Optional)
-
-Query Parameters:
-- category: all, india, world, local, sports, business, science, technology, entertainment, health
-- sort_by: recent, popular, controversial
-- page: page number (default: 1)
-- per_page: items per page (default: 20)
-- search: search keyword
-
-Response: {
-  "articles": [...],
-  "pagination": {
-    "page": 1,
-    "per_page": 20,
-    "total_pages": 5,
-    "total_items": 100,
-    "has_next": true,
-    "has_prev": false
-  }
-}
-```
-
-#### Get Single Article
-```
-GET /api/articles/<article_id>
-Authorization: Bearer <access_token> (Optional)
-
-Response: {
-  "article": {
-    "id": 1,
-    "headline": "...",
-    "author": "...",
-    "article_link": "...",
-    "vote_stats": {
-      "biased": 765,
-      "not_biased": 480,
-      "biased_percentage": 61.4,
-      "not_biased_percentage": 38.6
-    },
-    "user_vote": true,  // if authenticated
-    "is_bookmarked": false,  // if authenticated
-    "related_articles": [...],
-    "total_related_articles": 3
-  }
-}
-```
-
-#### Get Categories
-```
-GET /api/categories
-
-Response: {
-  "categories": [
-    {"name": "india", "count": 50},
-    {"name": "world", "count": 45},
-    ...
-  ]
-}
-```
-
 ### Voting
 
 #### Vote on Article
@@ -288,17 +184,6 @@ Content-Type: application/json
 
 Response: {
   "message": "Vote recorded successfully",
-  "vote_stats": {...}
-}
-```
-
-#### Delete Vote
-```
-DELETE /api/articles/<article_id>/vote
-Authorization: Bearer <access_token>
-
-Response: {
-  "message": "Vote removed successfully",
   "vote_stats": {...}
 }
 ```
@@ -366,7 +251,7 @@ Response: {
 }
 ```
 
-## 🔒 Security Features
+## Security Features
 
 1. **Password Hashing**: Uses bcrypt for secure password storage
 2. **JWT Authentication**: Token-based authentication with configurable expiry

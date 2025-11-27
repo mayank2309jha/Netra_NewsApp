@@ -7,7 +7,11 @@ from datetime import datetime
 import subprocess
 import signal
 
-# Configure logging
+# Configure loggingdef signal_handler(signum, frame):
+    """Handle shutdown signals gracefully"""
+    global running
+    logger.info("Shutdown signal received. Finishing current task and exiting...")
+    running = False
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -18,9 +22,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Global flag for graceful shutdown
 running = True
-
 
 def signal_handler(signum, frame):
     """Handle shutdown signals gracefully"""
@@ -120,46 +122,6 @@ def run_scheduler(interval_minutes):
     
     logger.info("Scheduler stopped gracefully.")
 
-
-def run_with_schedule_library(interval_minutes):
-    """Alternative implementation using the 'schedule' library"""
-    try:
-        import schedule
-    except ImportError:
-        logger.error("'schedule' library not installed. Install with: pip install schedule")
-        logger.info("Falling back to simple scheduler...")
-        run_scheduler(interval_minutes)
-        return
-    
-    global running
-    
-    # Register signal handlers
-    signal.signal(signal.SIGINT, signal_handler)
-    signal.signal(signal.SIGTERM, signal_handler)
-    
-    logger.info("=" * 60)
-    logger.info("NETRA News Data Scheduler Started (using schedule library)")
-    logger.info(f"Interval: Every {interval_minutes} minutes")
-    logger.info(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    logger.info("=" * 60)
-    
-    # Schedule the job
-    schedule.every(interval_minutes).minutes.do(run_data_loader)
-    
-    # Run immediately on start
-    logger.info("Running initial data load...")
-    run_data_loader()
-    
-    logger.info(f"\nNext run scheduled in {interval_minutes} minutes...")
-    logger.info("Press Ctrl+C to stop the scheduler.\n")
-    
-    while running:
-        schedule.run_pending()
-        time.sleep(10)
-    
-    logger.info("Scheduler stopped gracefully.")
-
-
 def main():
     parser = argparse.ArgumentParser(
         description='NETRA News Data Scheduler - Periodically loads new articles into the database'
@@ -174,11 +136,6 @@ def main():
         '--once', '-o',
         action='store_true',
         help='Run the data loader once and exit'
-    )
-    parser.add_argument(
-        '--use-schedule',
-        action='store_true',
-        help='Use the schedule library (requires: pip install schedule)'
     )
     
     args = parser.parse_args()
@@ -197,11 +154,7 @@ def main():
         success = run_data_loader()
         sys.exit(0 if success else 1)
     
-    # Scheduler mode
-    if args.use_schedule:
-        run_with_schedule_library(args.interval)
-    else:
-        run_scheduler(args.interval)
+    run_scheduler(args.interval)
 
 
 if __name__ == '__main__':
